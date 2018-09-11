@@ -6,6 +6,7 @@ export default class Login extends Component {
     state = {
         email: "",
         password: "",
+        isChecked:false
     };
 //gets the value of input fields
     handleFieldChange = event => {
@@ -15,30 +16,36 @@ export default class Login extends Component {
     }
 //on button click checks database to see if user exists, then saves user information in local or session storage
     handleLogin = () => {
-        APIManager.getUser(`users?email=${this.state.email}`)
+        console.log(this.state.email,this.state.password)
+        APIManager.getUser(`users?email=${this.state.email}&password=${this.state.password}`)
       .then(user => {
         // let loginUser = users.find(u => u.inputEmail === email && u.inputPassword === password)
-        console.log("user",user);
         if (user.length > 0 && this.state.password === user[0].password) {
-          this.setState({ userId: user[0].id });
-          const checkbox = document.getElementById("checkbox");
+            this.setState({ userId: user[0].id });
+            //const checkbox = document.getElementById("checkbox");
+            console.log("user",user);
+
           let loginObj = JSON.stringify({
-            email: this.state.email,
-            password: this.state.password,
-            userId: this.state.userId
-          })
-              if (checkbox.checked) {
+              email: this.state.email,
+              password: this.state.password,
+              userId: this.state.userId
+            })
+            console.log(loginObj)
+            if (this.state.isChecked === true) {
+                
+                console.log(loginObj)
                 localStorage.setItem("userInfo", loginObj);
-  
-          } else {
+                
+            } else {
+                console.log("hello")
                 sessionStorage.setItem("userInfo", loginObj);
-  
+                
             }
-        } else {
-          alert(
-            "Incorrect User Name or Password."
-          );
-        }
+            } else {
+              alert(
+                "Incorrect User Name or Password."
+              );
+            }
       })
        
         }
@@ -59,7 +66,8 @@ export default class Login extends Component {
                  placeholder="Password" 
                  onChange = {this.handleFieldChange}/>
                  <label> Remember Me</label>
-                 <input type="checkbox" id="checkbox" />
+                 <input onClick={() => (this.setState({ isChecked: true }))} type="checkbox" id="myCheck" />
+                 {/* <input type="checkbox" id="checkbox" /> */}
                  <button  
                  type="submit">
                 Submit

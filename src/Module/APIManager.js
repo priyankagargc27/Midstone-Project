@@ -1,12 +1,17 @@
 const remoteURL = "http://localhost:5002"
 
 export default Object.create(null, {
+    getUser:{
+        value: function (object){
+            return fetch(`${remoteURL}/${object}`).then(e => e.json());
+        }
+    },
     get: {
         value: function (object, id) {
             return fetch(`${remoteURL}/${object}/${id}`).then(e => e.json())
         }
     },
-    getAll: {
+    getAllData: {
         value: function (object) {
             return fetch(`${remoteURL}/${object}`).then(e => e.json())
         }
@@ -14,11 +19,6 @@ export default Object.create(null, {
     getAllOfId: {
         value: function (object, id) {
             return fetch(`${remoteURL}/${object}?userId=${id}`).then(e => e.json())
-        }
-    },
-    getUser:{
-        value: function (object){
-            return fetch(`${remoteURL}/${object}`).then(e => e.json());
         }
     },
     delete: {

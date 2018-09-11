@@ -8,9 +8,9 @@ const Home = props => {
         <Container>
            <Container className="HomeCopy" pad={{vertical: 'none'}} primary={true}>
         <Title isSize="1" className="home-headline">
-          Welcome!
+          Welcome To Save Recipe Management!
         </Title>
-        <p tag="h2">To get started Register or Sign-In</p>
+        <p tag="h2">To get started First Register or Sign-In</p>
         <Button>
             <Link to={{
                 pathname: "/Login"}}>

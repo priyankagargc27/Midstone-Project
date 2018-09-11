@@ -29,6 +29,89 @@
       "email": "priyanka.g.85@gmail.com",
       "password": "1234",
       "id": 5
+    },
+    {
+      "name": "Kaushal",
+      "email": "priyanka.g.85@gmail.com",
+      "password": "qwerty",
+      "id": 6
+    },
+    {
+      "name": "abc",
+      "email": "test@test.com",
+      "password": "1234",
+      "id": 7
+    },
+    {
+      "name": "jordan",
+      "email": "priyanka.g.85@gmail.com",
+      "password": "aa",
+      "id": 8
+    },
+    {
+      "name": "test",
+      "email": "priyanka.g.85@gmail.com",
+      "password": "1234",
+      "id": 9
+    },
+    {
+      "name": "priyankagarg",
+      "email": "priyanka.g.85@gmail.com",
+      "password": "1234",
+      "id": 10
+    },
+    {
+      "name": "",
+      "email": "priyanka.g.85@gmail.com",
+      "password": "12345",
+      "id": 11
+    },
+    {
+      "name": "",
+      "email": "priyanka.g.85@gmail.com",
+      "password": "1234",
+      "id": 12
+    },
+    {
+      "name": "Priyanka",
+      "email": "priyanka.g.85@gmail.com",
+      "password": "qwerty",
+      "id": 13
+    },
+    {
+      "name": "Priyanka Garg",
+      "email": "priyanka.g.85@gmail.com",
+      "password": "qw",
+      "id": 14
+    },
+    {
+      "name": "",
+      "email": "priyanka.g.85@gmail.com",
+      "password": "aa",
+      "id": 15
+    },
+    {
+      "name": "Brenda",
+      "email": "brenda@test.com",
+      "password": "aa",
+      "id": 16
+    }
+  ],
+  "profiles": [
+    {
+      "userName": "Priyanka",
+      "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/19665142_1510464422337186_5008264749503450620_n.jpg?_nc_cat=0&oh=c0aa58a56b777d2969cacff0c4af8175&oe=5C2088F8",
+      "userId": 2,
+      "id": 1,
+      "statement": "I love to cook yummy food for my husband."
+    }
+  ],
+  "friends": [
+    {
+      "userId": 2,
+      "friendId": 1,
+      "id": 1
     }
   ]
+
 }
