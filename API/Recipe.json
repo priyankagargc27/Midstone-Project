@@ -2,99 +2,21 @@
   "users": [
     {
       "name": "Priyanka Garg",
-      "email": "me@gmail.com",
-      "password": "144512345",
+      "email": "priyanka.g.85@gmail.com",
+      "password": "1234",
       "id": 1
     },
     {
       "name": "Priyanka",
-      "email": "priyanka.g.85@gmail.com",
-      "password": "asdfg",
+      "email": "me@test.com",
+      "password": "aa",
       "id": 2
     },
     {
-      "name": "",
-      "email": "priyanka.g.85@gmail.com",
-      "password": "1234",
+      "name": "tuffy2",
+      "email": "a@a.com",
+      "password": "a",
       "id": 3
-    },
-    {
-      "name": "Aryan",
-      "email": "Aryan@me.com",
-      "password": "aryan",
-      "id": 4
-    },
-    {
-      "name": "",
-      "email": "priyanka.g.85@gmail.com",
-      "password": "1234",
-      "id": 5
-    },
-    {
-      "name": "Kaushal",
-      "email": "priyanka.g.85@gmail.com",
-      "password": "qwerty",
-      "id": 6
-    },
-    {
-      "name": "abc",
-      "email": "test@test.com",
-      "password": "1234",
-      "id": 7
-    },
-    {
-      "name": "jordan",
-      "email": "priyanka.g.85@gmail.com",
-      "password": "aa",
-      "id": 8
-    },
-    {
-      "name": "test",
-      "email": "priyanka.g.85@gmail.com",
-      "password": "1234",
-      "id": 9
-    },
-    {
-      "name": "priyankagarg",
-      "email": "priyanka.g.85@gmail.com",
-      "password": "1234",
-      "id": 10
-    },
-    {
-      "name": "",
-      "email": "priyanka.g.85@gmail.com",
-      "password": "12345",
-      "id": 11
-    },
-    {
-      "name": "",
-      "email": "priyanka.g.85@gmail.com",
-      "password": "1234",
-      "id": 12
-    },
-    {
-      "name": "Priyanka",
-      "email": "priyanka.g.85@gmail.com",
-      "password": "qwerty",
-      "id": 13
-    },
-    {
-      "name": "Priyanka Garg",
-      "email": "priyanka.g.85@gmail.com",
-      "password": "qw",
-      "id": 14
-    },
-    {
-      "name": "",
-      "email": "priyanka.g.85@gmail.com",
-      "password": "aa",
-      "id": 15
-    },
-    {
-      "name": "Brenda",
-      "email": "brenda@test.com",
-      "password": "aa",
-      "id": 16
     }
   ],
   "profiles": [
@@ -112,6 +34,21 @@
       "friendId": 1,
       "id": 1
     }
+  ],
+  "recipes": [
+    {
+      "title": "Farro, Green Bean, and Kale Salad",
+      "time to cook": "4-6 minutes",
+      "image": "https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fimage%2F2017%2F08%2Fmain%2Ffarro-green-bean-kale-salad-1709p117.jpg%3Fitok%3DzsOFhwDL&w=800&q=85",
+      "ingredients": "4 cups water 1 cup halved haricots verts or green beans 2 tablespoons red wine vinegar 1 1/2 tablespoons extra-virgin olive oil 1 teaspoon Dijon mustard 1/4 teaspoon kosher salt 1/4 teaspoon black pepper 1 (8.5-oz.) pkg. precooked farro (2 cups) 2 cups thinly sliced lacinato kale 1 cup halved cherry or grape tomatoes 1 ounce feta cheese, crumbled (about 1/4 cup)",
+      "direction": "Bring 4 cups water to a boil in a small saucepan. Add green beans; cook 3 to 5 minutes or until crisp-tender. Drain, and rinse well with cold water; drain.Combine vinegar, oil, mustard, salt, and pepper in a medium bowl, stirring with a whisk. Heat farro according to package directions. Add farro, kale, tomatoes, and green beans to dressing; toss well. Sprinkle with cheese."
+    },
+    {
+      "title": "Red Lentil Curry",
+      "time to cook": "15-20 minutes",
+      "image": "https://skinnyms.com/wp-content/uploads/2014/01/Slow-Cooker-Red-Lentil-Curry-1-750x500.jpg",
+      "ingredients": "2 Tbs. canola oil,3 tsp. whole cumin seeds,2 tsp. red pepper flakes,1 medium onion, diced (1 1/2 cups),2 cloves garlic, minced (2 tsp.), 1 tsp. salt,1 1/2 cups yellow lentils, sorted and rinsed,2 cups low-sodium vegetable broth",
+      "direction": "1. Heat oil in saucepan over medium-high heat. Stir in cumin and red pepper flakes, and sauté 1 minute. Add onion, garlic, and salt, and sauté 1 minute more.,2. Add lentils, vegetable broth, 2 cups water, and turmeric. Cover, reduce heat to medium-low, and simmer 25 minutes, or until liquid is absorbed."
+    }
   ]
-
 }
