@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import APIManager from "../Module/APIManager"
 //import 'bulma/css/bulma.css';
+import "./Login.css"
 
 export default class Login extends Component {
     state = {
@@ -51,6 +52,7 @@ export default class Login extends Component {
         }
       render() {
         return (
+            <div className="login">
             <form onSubmit={this.handleLogin}>
                 <h2> Please Login </h2>
                  <label>Email</label>
@@ -73,6 +75,7 @@ export default class Login extends Component {
                 Submit
                 </button>
             </form>
+            </div>
         )
     }
     }

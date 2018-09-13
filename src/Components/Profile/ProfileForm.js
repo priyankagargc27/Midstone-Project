@@ -1,20 +1,18 @@
 import React, { Component } from "react"
-import "./Recipe.css"
+//import "./Recipe.css"
 //import APIManager from "./module/APIManager"
 
 
-export default class RecipeForm extends Component {
+export default class ProfileForm extends Component {
 
-    
     state={
-        title : "",
-        cookTime:"",
-        image:"",
-        ingredients : "",
-        direction: "",
+        name : "",
+    
+        Image:"",
+        statement:"",
         userId: JSON.parse(sessionStorage.getItem("userInfo")).userId
+
     }
-    //const user = JSON.parse(sessionStorage.getItem("userinfo"))
 
 
 
@@ -25,21 +23,19 @@ export default class RecipeForm extends Component {
         this.setState(stateToChange)
      }
 
-     MakeNewRecipe = evt => {
+     MakeNewProfile = evt => {
          evt.preventDefault()
-         const recipe = {
-             title:this.state.title,
-             cookTime:this.state.cookTime,
-             image:this.state.image,
-             ingredients:this.state.ingredients,
-             direction:this.state.direction,
+         const profile = {
+             name:this.state.name,
+    
+             Image:this.state.Image,
+             statement:this.state.statement,
              userId: JSON.parse(sessionStorage.getItem("userInfo")).userId
 
             }
-            
+    
          
-         
-            this.props.addRecipe(recipe, "recipe").then(() => this.props.history.push("/recipes"))
+            this.props.addProfile(profile, "profile").then(() => this.props.history.push("/profiles"))
 
 //          APIManager.post("articles", article)
 // .then(() => APIManager.getAll("articles"))
@@ -53,44 +49,38 @@ export default class RecipeForm extends Component {
            <React.Fragment>
                
                <div className="recipeContainer">
-                 <h3>My Recipes</h3>
+                 <h3>My Profile</h3>
               <form className="recipeForm">
                  <div className="form-group">
-                    <label htmlFor="title">Title</label>
+                    <label htmlFor="title">Name</label>
                     <input type="text" required="true"
                        className="form-control"
                        onChange={this.handleFieldChange}
-                       id="title"
-                       placeholder="Title" />
+                       id="name"
+                       placeholder="Name" />
                  </div>
                  <div className="form-group">
-                    <label htmlFor="cookTime">Cook Time</label>
+                    <label htmlFor="Image">Image</label>
                     <input type="text" required="true"
                        className="form-control"
                        onChange={this.handleFieldChange}
-                       id="cookTime" placeholder="cookTime" />
+                       id="Image" placeholder="Image" />
                  </div>
+                 
                  <div className="form-group">
-                    <label htmlFor="image">Image</label>
+                    <label htmlFor="Statement">Statement</label>
                     <input type="text" required="true"
                        className="form-control"
                        onChange={this.handleFieldChange}
-                       id="image" placeholder="Image Url" />
+                       id="statement"  placeholder="Statement" />
                  </div>
-                 <div className="form-group">
-                    <label htmlFor="ingredients">Ingredients</label>
-                    <input type="text" required="true"
-                       className="form-control"
-                       onChange={this.handleFieldChange}
-                       id="ingredients"  placeholder="Ingredients" />
-                 </div>
-                 <div className="form-group">
+                 {/* <div className="form-group">
                     <label htmlFor="direction">Direction</label>
                     <input type="text" required="true"
                        className="form-control"
                        onChange={this.handleFieldChange}
                        id="direction"  placeholder="Direction" />
-                 </div>
+                 </div> */}
                  {/* <div className="form-group">
                     <label htmlFor="employee">Assign to caretaker</label>
                     <select defaultValue="" name="employee" id="employee"
@@ -101,7 +91,7 @@ export default class RecipeForm extends Component {
                        }
                     </select>
                  </div> */}
-                 <button type="submit" onClick={this.MakeNewRecipe} className="btn btn-primary">Submit</button>
+                 <button type="submit" onClick={this.MakeNewProfile} className="btn btn-primary">Submit</button>
               </form>
               </div>
            </React.Fragment>

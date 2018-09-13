@@ -26,16 +26,16 @@ logoutFunction = ()=>
             <nav className="navbar navbar-light fixed-top light-blue flex-md-nowrap p-0 shadow">
                 <ul className="nav nav-pills">
                     <li className="nav-item">
-                        <Link className="nav-link" to="/home">Home</Link>
+                        <Link className="nav-link" to="/Profile">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/recipes">Recipe</Link>
+                        <Link className="nav-link" to="/recipes">Main Entrees</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/Task">Task</Link>
+                        <Link className="nav-link" to="/Task">Drink</Link>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="/Events">Events</Link>
+                    <Link className="nav-link" to="/Events">Dessert</Link>
                     </li>
                     <li className ="nav-item">
                     <NavLink href="#" onClick={this.logoutFunction} >Logout</NavLink>

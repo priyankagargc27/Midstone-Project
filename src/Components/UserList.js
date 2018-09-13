@@ -1,63 +1,42 @@
-// import React from 'react'
-// import UserProfile from './UserProfile'
-// import APIManager from "../Module/APIManager"
+import React from 'react'
+import Profile from './Profile'
+import APIManager from "../Module/APIManager"
 
 
-// export default class UserList extends React.Component {
-//     constructor() {
-//         super();
-//         this.state = {
-//             users: []
-//         }
-//     }
+export default class UserList extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            users: []
+        }
+    }
 
-// componentDidMount() {
-//     //let localUser = JSON.parse(localStorage.getItem("userInfo")); // gets localStorage
-//     //let sessionUser = JSON.parse(sessionStorage.getItem("userInfo")); // gets sessionStorage
-
-//     APIManager.getAllData("profiles")
-//     .then(profiles => {
-//         this.setState({ users: profiles})
-//     })
-
-// }
-
-// addToFriends = (currentUserId, friendId) => {
-//         let currentUser = JSON.parse(localStorage.getItem("userInfo"));
-//         if (currentUser === null) {
-//             currentUser = JSON.parse(sessionStorage.getItem("userInfo"));
-//             currentUserId = currentUser.userId
-//         } else {
-//             currentUserId = currentUser.userId
-//         }
-//             fetch("http://localhost:5002/friends", {
-//                 method: "POST",
-//                 headers: {
-//                     "Content-Type": "application/json",
-//                 },
-//                 body: JSON.stringify({
-//                     userId: currentUserId,
-//                     friendId: +friendId,
-//                 })
-//             }).then(() => {
-                    
-//                 alert("Added friend!!")
-//             })
-//     }
+    componentDidMount(){
+        let newState = {};
+        let localUser = JSON.parse(sessionStorage.getItem("userInfo"));
+        newState.user = localUser;
+        DataManager.getUserData("profiles", localUser.id)
+        .then(profiles => {newState.profiles = profiles})
+        .then(() => {
+            this.setState(newState)
+        })
+    }
 
 
-//     render() {
+
+
+    render() {
         
-//         return (
-//             <React.Fragment>
-//                 <div className="UserList">
-//                 {
-//                     this.state.users.map(user => 
-//                     < UserProfile key={user.id} user={user} addToFriends={this.addToFriends}/>
-//                     )
-//                 }
-//             </div>
-//             </React.Fragment>
-//         )
-//     }
-// }
+        return (
+            <React.Fragment>
+                <div className="UserList">
+                {
+                    this.state.users.map(user => 
+                    < Profile key={user.id} user={user} addToFriends={this.addToFriends}/>
+                    )
+                }
+            </div>
+            </React.Fragment>
+        )
+    }
+}

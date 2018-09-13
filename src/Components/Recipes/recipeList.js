@@ -1,64 +1,38 @@
+
+
 import React, { Component } from 'react'
+import RecipeCard from "./RecipeCard"
 import { Link } from "react-router-dom"
- //import "./Article.css"
+import StarRatingComponent from 'react-star-rating-component';
+
+import "./Recipe.css"
+//import "./Article.css"
 
 export default class RecipeList extends Component {
+
+
+    
+
     render() {
+        
+
         return (
             <React.Fragment>
-                <section className="recipes">
+               
                     {
                         this.props.recipes.map(recipe =>
-                            <div key={recipe.id} className="card">
-                                <div className="card-body">
-                                    <h5 className="card-title" className="recipe-name">
-                                        {recipe.title}
-                                    </h5>
-                                    <div className="card-body">
-                                    <h5 className="card-title" className="recipe-cookTime">
-                                        {recipe.cookTime}
-                                    </h5>
-                                    <div className="card-body">
-                                    <h5 className="card-title" className="recipe-name">
-                                        {recipe.title}
-                                    </h5>
-
-                                    <section className="card-title" className="article-Description">
-                                        {article.Description}
-                                    </section>
-                                    <h6>
-                                    <a href={`${article.url}`}>Visit the Link</a>
-
-                                    
-                                        {/* <Link className="nav-link" to={`${article.url}`}>Details</Link> */}
-                                    </h6>
-                                    <h6>
-                                    
-                                        <button type="button" className="btn btn-primary"
-                                            onClick={() => this.props.deleteArticle(article.id, "articles")}>Delete</button>
-                                    
-
-                                    <button type="button" className="btn btn-primary"
-                                            onClick={() => this.props.history.push(`/articles/Edit/${article.id}`)}>Edit</button>
-                            {/* //         <a href="#"
-                            // onClick={() =>  this.props.history.push(`/articles/Edit/${article.id}`)}
+                            <RecipeCard key={recipe.id}
+                            recipe={recipe}/>
+                                         
+                        )}
                         
-                            //     className="card-link">Edit</a> */}
-
-                                    </h6> 
-                                </div>
-                            </div>
-                        )
-                    }
-                </section>
-                <p></p>
-                <div className="articleButton">
+                <div className="recipeButton">
                     <button type="button"
                         className="btn btn-primary"
                         onClick={() => {
-                            this.props.history.push("/articles/new")
+                            this.props.history.push("/recipes/new")
                         }
-                        }>Create New Article
+                        }>Create New Recipe
                 </button>
                 </div>
             </React.Fragment>

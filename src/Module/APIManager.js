@@ -30,14 +30,15 @@ export default Object.create(null, {
         }
     },
     post: {
-        value: function (object, newElement) {
-            return fetch(`${remoteURL}/${object}`, {
+        value: (key,object) => {
+            return fetch(`${remoteURL}/${key}`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify(newElement)
-            }).then(e => e.json())
+                body: JSON.stringify(object)
+            })
+                .then(response => response.json())
         }
     },
     edit: {
