@@ -10,7 +10,11 @@ import "./Recipe.css"
 
 export default class RecipeList extends Component {
 
-
+    toggleReview = () => {
+        this.setState((prevState) => {
+            return {visible: !prevState.visible}
+        })
+        }
     
 
     render() {
@@ -19,12 +23,6 @@ export default class RecipeList extends Component {
         return (
             <React.Fragment>
                
-                    {
-                        this.props.recipes.map(recipe =>
-                            <RecipeCard key={recipe.id}
-                            recipe={recipe}/>
-                                         
-                        )}
                         
                 <div className="recipeButton">
                     <button type="button"
@@ -32,9 +30,15 @@ export default class RecipeList extends Component {
                         onClick={() => {
                             this.props.history.push("/recipes/new")
                         }
-                        }>Create New Recipe
-                </button>
-                </div>
+                    }>Create New Recipe
+                                            </button>
+                                        {
+                                            this.props.recipes.map(recipe =>
+                                                <RecipeCard key={recipe.id}
+                                                recipe={recipe} {...this.props}/>
+                                                
+                                            )}
+                                            </div>
             </React.Fragment>
         )
     }

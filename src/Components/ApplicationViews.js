@@ -11,6 +11,8 @@ import RecipeDetail from './Recipes/RecipeDetail'
 import ProfileForm from "./Profile/ProfileForm"
 import Profile from "./Profile/Profile"
 import APIManager from "../Module/APIManager"
+//import AddReview from "../Review/AddReview"
+
 //import UserList from './UserList'
 
 //import Login from './Login'
@@ -61,13 +63,33 @@ export default class ApplicationViews extends Component {
             })
 
     }
-    addReview = review => APIManager.post("reviews", review)
-    .then(() => APIManager.getAllData("reviews"))
-    .then(reviews => this.setState({
-        reviews: reviews
 
-    }))
+    // handleReview = (ReviewObject, recipeId) => {
+    //     //checks to see if usesr is signed in    
+    //      let signedInUser = JSON.parse(localStorage.getItem("userInfo"));
+    //      if (signedInUser === null) {
+    //          signedInUser = JSON.parse(sessionStorage.getItem("userInfo"));
+    //          signedInUser = signedInUser.userId;
+    //      } else {
+    //          signedInUser = signedInUser.userId;
+    //      }
+    //         //runs the patch function on favorites to add review
+    //              APIManager.reviewRecipe("recipes", recipeId, ReviewObject )         
+    //              .then(() => {r=>r.json()
+    //                  //after review is added, refresh user favorites
+    //                  //this.getUserFavorites()
+    //              })
+       
+    //      }
+   
+    
+    // addReview = review => APIManager.post("reviews", review)
+    // .then(() => APIManager.getAllData("reviews"))
+    // .then(reviews => this.setState({
+    //     reviews: reviews
+        
 
+    // }))
     addRecipe = recipe => APIManager.post("recipes", recipe)
         .then(() => APIManager.getAllData("recipes"))
         .then(recipes => this.setState({
@@ -131,12 +153,15 @@ export default class ApplicationViews extends Component {
                     return <RecipeForm {...props}
                         addRecipe={this.addRecipe} />
                 }} />
+
                 <Route path="/recipes/:recipeId(\d+)" render={(props) => {
                     return <RecipeDetail {...props} 
                     addReview={this.addReview}
+                    reviews={this.state.reviews}
                     deleteRecipe={this.deleteRecipe} 
                     recipes={this.state.recipes} />
                 }} />
+
 
                 {/* <Route exact path='/UserList' render={(props) => {
                     if (this.isAuthenticated()) {

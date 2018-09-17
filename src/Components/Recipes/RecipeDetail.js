@@ -3,31 +3,39 @@ import StarRatingComponent from 'react-star-rating-component';
 import {Button} from 'reactstrap';
 import APIManager from "../../Module/APIManager";
 import AddReview from "../Review/AddReview"
- //import Review from "../Review/Review"
+import Review from "../Review/Review"
 export default class RecipeDetail extends Component {
 
     constructor() {
         super();
 
         this.state = {
-            rating: 0
+            rating: 0,
+            review:""
         };
     }
+
     onStarClick(nextValue, prevValue, name) {
         this.setState({ rating: nextValue });
-        this.props.recipes.find(recipe => {
-            if (recipe.recipeId === this.props.recipeId) {
-                let id = recipe.id
-                console.log(recipe.id)
-               // let id = recipe.id
+       
+                let id =  parseInt(this.props.match.params.recipeId)
+                console.log(id)
         let body = {rating: nextValue}  //sets body to updated rating
         APIManager.rating(id, body)
-        .then(() => {
+        .then(() => {r=>r.json()
            console.log("rating added")
         })        
+    
     }
-    })
-}
+    addReview = review => APIManager.post("reviews", review)
+    .then(() => APIManager.getAllData("reviews"))
+    .then(reviews => this.setState({
+        reviews: reviews
+        
+
+    }))
+
+    
     
     
     render() {
@@ -75,33 +83,36 @@ export default class RecipeDetail extends Component {
                         
 
                             <AddReview/>
-                             {/* <Review Review={this.props.review}/> */}
-                             
-                            {/* <div className="comments&reviews">
-                            <h4> Comments & Reviews </h4>
-                            </div>
+                            <section className="reviews">
+                    {
+                        this.props.reviews.map(review =>
+                            <div key={review.id} className="card">
+                                <div className="card-body">
+                                    <p className="card-title" className="review-name">
+                                        {review.review}
+                                    </p>
+                                    <br/>
+                                    
+                                    <time>Sent on:{review.time}</time>
+                                    <h5>By:{review.userName}</h5>
 
-                            <label for="comment">Post your comment :</label>
-                            <textarea class="form-control" rows="4" id="comment" placeholder="Type your comment"></textarea>
-                            <input type="hidden" name="recipe_id" id="recipe.id" value="16257"></input>
-                            <button type="button" class="btn btn-primary pull-right" name="submit" id="submit" onclick={this.addComments}>
-                            Post Comment</button>
-                             */}
-                            
-                            
-                            
-                             {/* <Button onPress={() => goBack()} title="Go back from this HomeScreen" />
-                        */}
 
-                        {/* <a href="#"
-                            onClick={() => this.props.deleteAnimal(animal.id)
-                                            .then(() => this.props.history.push("/animals"))}
-                            className="card-link">Delete</a>
-
-                            <a href="#"
-                            onClick={() =>  this.props.history.push(`/animals/Edit/${animal.id}`)}
                         
-                                className="card-link">Edit</a> */}
+                                </div>
+                            </div>
+                        )
+                    }
+                </section>
+                <div className="reviewButton">
+                    <button type="button"
+                        className="btn btn-primary"
+                        onClick={() => {
+                            this.props.history.push("/reviews/new")
+                        }
+                        }>Create New Review
+                </button>
+                </div>
+                            
 
                     </div>
                 </div>

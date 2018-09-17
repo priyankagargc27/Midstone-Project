@@ -1,10 +1,10 @@
 import React, { Component }  from 'react'
-//import APIManager from './Module/APIManager'
+import APIManager from "../../Module/APIManager";
 
 export default class AddReview extends Component {
 
     state= {
-        Review: "",
+        review: "",
         time:"",
      userId: JSON.parse(sessionStorage.getItem("userInfo")).userId
     
@@ -17,27 +17,37 @@ export default class AddReview extends Component {
         this.setState(stateToChange)
      }
     
+
+    //  addReview = review => APIManager.post("reviews", review)
+    //  .then(() => APIManager.getAllData("reviews"))
+    //  .then(reviews => this.setState({
+    //      reviews: reviews
+         
+ 
+    //  }))
+    
+    
      MakeNewReview = evt => {
         evt.preventDefault()
         const review = {
-            Review:this.state.Review,
-           time: new Date().toLocaleString(),
+            review:this.state.review,
+           time: new Date().toLocaleString()
            //userId: this.props.users.find(u => u.name === this.state.user).id
            //time:Date.now()
         
         
            }
           
-   
-    //on event, sets body equal to the input field text and passes the body and id in as parameters
   
-    this.props.addReview(review, "reviews").then(() => this.props.history.push("/reviews"))
+           console.log("hello")
+           this.props.addReview(review, "reviews").then(() => this.props.history.push("/reviews"))
 }
    
 
 render() {
     return (
        <React.Fragment>
+            <form  onSubmit={this.MakeNewReview} >
            <div className="messageContainer">
              <h5>Comments & Reviews</h5>
           <form className="eventForm">
@@ -46,7 +56,7 @@ render() {
                 <input type="text" required="true"
                    className="form-control"
                    onChange={this.handleFieldChange}
-                   id="reviewinput"
+                   id="review"
 
                    
                    placeholder="Write a review" />
@@ -55,13 +65,8 @@ render() {
 
                     </form>
                     </div>
+                    </form>
                     </React.Fragment>
                     
-                    
-                    
-                    )
-                    }
-
-                    
-
-}
+                    )}
+                }
