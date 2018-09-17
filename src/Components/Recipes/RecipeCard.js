@@ -44,6 +44,9 @@ export default class RecipeCard extends Component {
             <div className="recipe-card">
             <img top width="30%" src={this.props.recipe.image} className="recipe--image" />
             <br/>
+            <Link className="nav-link" to={`/recipes/${this.props.recipe.id}`}>{this.props.recipe.title}</Link>
+           
+                       
             {/* <a href="#"
                             onClick={this.showRecipeDetails}
                                             
@@ -52,7 +55,6 @@ export default class RecipeCard extends Component {
 
      {
                        
-                        <Link className="nav-link" to={`/recipes/${this.props.recipe.id}`}>{this.props.recipe.title}</Link>
                         
                 /* <br/>
                 <ul>

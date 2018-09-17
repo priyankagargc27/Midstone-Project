@@ -51,5 +51,18 @@ export default Object.create(null, {
                 body: JSON.stringify(editElement)
             }).then(e => e.json())
         }
-    }
+    },
+
+    rating:{
+    value: function (id, body)  {
+        console.log(body)
+      return fetch(`http://localhost:5002/recipes/${id}`, {
+          method: "PATCH",
+          headers: {
+              "Content-Type": "application/json"
+          },
+          body: JSON.stringify(body)
+      });
+  }
+}
 })

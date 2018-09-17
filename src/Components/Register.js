@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import APIManager from "../Module/APIManager"
+import "./Register.css"
 
 export default class Register extends Component {
     state = {
@@ -32,6 +33,8 @@ export default class Register extends Component {
     
     render() {
         return (
+            <div className="forms">
+            <div className="registerForm">
             <form onSubmit={this.handleRegister}>
                 <h2> Register Here!! </h2>
                     <label>Name</label>
@@ -54,6 +57,8 @@ export default class Register extends Component {
                  onChange = {this.handleFieldChange}/>
                  <button isColor='primary' type="submit">Submit</button>
             </form>
+            </div>
+            </div>
         )
     }
 }

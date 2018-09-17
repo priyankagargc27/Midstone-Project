@@ -23,6 +23,12 @@
       "email": "priyanka.g.85@gmail.com",
       "password": "1234",
       "id": 4
+    },
+    {
+      "name": "jordan",
+      "email": "foo@foo.com",
+      "password": "aa",
+      "id": 5
     }
   ],
   "profiles": [
@@ -43,23 +49,45 @@
   ],
   "recipes": [
     {
-      "title": "Crispy Chestnuts",
-      "cookTime": "20 minutes",
-      "image": "https://www.sanjeevkapoor.com/UploadFiles/RecipeImages/Crispy-Chestnuts-Cook-Smart-Sanjeev-Kapoor-Kitchen-FoodFood.jpg",
-      "ingredients": "•Tinned chestnuts 1 cup •Oil 1 tablespo to deep fry •Cornflour 2 teaspoons •Refined flour (maida) 2 teaspoons •Salt to taste •Soy sauce 1 teaspoon •Sweet red chilli sauce 4 tablespoons •Red chilli powder 1 1/2 teaspoons •Ginger finely chopped 2 teaspoons •Garlic finely chopped 2 teaspoons •Spring onions with greens 4",
-      "direction": "Step 1 Heat sufficient oil in a kadai. Step 2 Take chestnuts in a bowl. Add cornflour , refined flour, salt, soy sauce, 1 tablespoon red chilli sauce and ½ teaspoon red chilli powder and mix well. Step 3 Deep-fry chestnuts in hot oil till golden and crisp. Step 4 Heat 1 tablespoon oil in a non-stick wok. Step 5 Cut spring onion bulbs into roundels. Reserve the greens. Step 6 Add the spring onion bulb roundels, ginger and garlic to the wok and saute till golden. Step 7 Add remaining red chilli sauce and remaining red chilli powder, mix well and saute for 2 minutes. Step 8 Cut reserved spring onion greens into roundels. Step 9 Drain the chestnuts and add to the wok, mix and cook for a minute. Step 10 Serve hot garnished with spring onion green roundels",
-      "userId": 1,
-      "id": 3
-    },
-    
-    {
       "title": "chesse Gravy",
       "cookTime": "12-15 inutes",
       "image": "https://catering.gofoodpng.biz/wp-content/uploads/2018/03/Paneer-Butter-Masala.jpg",
-      "ingredients": "• Paneer - 250 grams. • Curry powder - 1 tablespoon. • Butter - 2 tablespoons. • Tomatoes - 3 numbers. • Red bell pepper - 1 number. • Red chilly - 2 numbers. • Ginger - 1 piece. • Onion (medium size) - 1 number. • Oil - 1 tablespoon. • Cream - 2 tablespoons. • Kasoori methi - ½ tea spoon. • Salt - to taste. • Garlic - 4 cloves.",
+      "ingredients": "• Cheese Cubes - 250 grams. • Curry powder - 1 tablespoon. • Butter - 2 tablespoons. • Tomatoes - 3 numbers. • Red bell pepper - 1 number. • Red chilly - 2 numbers. • Ginger - 1 piece. • Onion (medium size) - 1 number. • Oil - 1 tablespoon. • Cream - 2 tablespoons. • Kasoori methi - ½ tea spoon. • Salt - to taste. • Garlic - 4 cloves.",
       "direction": "Heat oil in a pan add chopped onions, chopped ginger, and garlic, red chilly, add red bell pepper, tomatoes, kasoori methi, salt, put the lid on and cook this on a slow flame till tomatoes and bell peppers are tender. Let it cool down put this into a blender make a paste. Heat butter in a pan add curry powder, cook this for 4 minutes, add tomato, bell pepper, paste, mix it. Once come to boil add paneer, cream, mix this and cook it for 5 minutes and switch off the flame.",
       "userId": 1,
-      "id": 5
+      "id": 5,
+      "rating": 5
+    },
+    {
+      "title": "Vegetable Biryani",
+      "cookTime": "30-35 minutes",
+      "image": "https://1.bp.blogspot.com/-K8NZg6QdHT0/VvgPWYfY0cI/AAAAAAAAV0k/Kl9-BGH1C3sETmQskVm83j3W99JyGodqQ/s1600/Palak%2BVeg%2BBiryani%2B%25283%2529%2B-%2B1.jpg",
+      "ingredients": "• Cashewnuts - 15 grams. • Mint - 40 grams. • Biryani masala - 1 bag. • Whole garam masala - 1 teaspoons. • Cauliflower - 100 grams. • Ginger garlic paste - 1 tablespoons. • Gr chilli sliced - 3 numbers. • Fried onions - 40 grams. • Paneer - 50 grams. • Carrots - 100 grams. • Potatoes - 100 grams. • Kala jeera - 1 teaspoons. • Rice - 300 grams. • Almonds - 15 grams. • Oil - 100 ml. • Curds - 200 grams. • Salt - 1 to taste.",
+      "direction": "Take a pan add oil,garam masala, saute it add jeera, ginger garlic paste, vegetables cut a little bit long size mix well and add salt, need to cook till they are half cooked. Now add mint, coriander, green chillies, biryani masala mix half cup of curd, add paneer. Soak rice for 1 hr in abowl. Now boil water add rice to it, let the rice to be cooked half (70%) and strain the rice. Take a biryani bowl add half of the cooked vegetables spread all over the pan add some curd, nuts if required, salt, fry onions, add half rice, repeat the same process again. Lastly add fried onions, bread, close it with a lid, and cook it for 5 minutes on a very slow flame.",
+      "userId": 1,
+      "id": 6,
+      "rating": 5
+    },
+    {
+      "title": "Baby Corn Chilli Fry",
+      "cookTime": "20 minutes",
+      "image": "http://media1.sailusfood.com/wp-content/uploads/2010/07/chilli-baby-corn.jpg",
+      "ingredients": "• Msg (optional) - 1 pinch. • Vinegar - 1 tea spoon. • Tomato ketchup - 1 tablespoon. • Soya sauce - 1 tablespoon. • Green chilly sauce - 1 tea spoon. • Onion chopped - 1 number. • Garlic(chopped) - 4 clove. • Ginger(chopped) - 1 piece. • Oil - to fry. • Corn starch - 1/2 cup. • All purpose flour - 2 tablespoons. • Baby corns - 300 grams. • Cumin powder - 1/2 tea spoon. • Spring onions (chopped) - 2 tablespoons. • Salt - to taste. • Green chillies (chopped) - 3 numbers. • Bell peppers (green, yellow, red colours) - 1 cup. • Red chilly powder - 1 tablespoon. • Egg - 1 number",
+      "direction": "In a bowl, add baby corns, all purpose flour, toss it, add half an egg, mix this well, add corn starch coat with the baby corn and deep fry them. Take a pan add oil heat it, add chopped ginger, garlic, add chopped onions, salt, chopped green chilly, bell peppers(green, yellow, red), red chilly powder, toss it Add bottle green chilly sauce, soya sauce, tomato ketchup, vinegar, MSG (optional), cumin seeds powder (optional), spring onions. Add fried corns, toss them and switch off the flame.",
+      "userId": 1,
+      "id": 7,
+      "rating": 5
+    },
+    {
+      "title": "Crispy Chestnuts",
+      "cookTime": "12 min",
+      "image": "https://www.sanjeevkapoor.com/UploadFiles/RecipeImages/Crispy-Chestnuts-Cook-Smart-Sanjeev-Kapoor-Kitchen-FoodFood.jpg",
+      "ingredients": "•Tinned chestnuts 1 cup •Oil 1 tablespo to deep fry •Cornflour 2 teaspoons •Refined flour (maida) 2 teaspoons •Salt to taste •Soy sauce 1 teaspoon •Sweet red chilli sauce 4 tablespoons •Red chilli powder 1 1/2 teaspoons •Ginger finely chopped 2 teaspoons •Garlic finely chopped 2 teaspoons •Spring onions with greens 4",
+      "direction": "Take a pan add oil,garam masala, saute it add jeera, ginger garlic paste, vegetables cut a little bit long size mix well and add salt, need to cook till they are half cooked. Now add mint, coriander, green chillies, biryani masala mix half cup of curd, add paneer. Soak rice for 1 hr in abowl. Now boil water add rice to it, let the rice to be cooked half (70%) and strain the rice. Take a biryani bowl add half of the cooked vegetables spread all over the pan add some curd, nuts if required, salt, fry onions, add half rice, repeat the same process again. Lastly add fried onions, bread, close it with a lid, and cook it for 5 minutes on a very slow flame.",
+      "userId": 1,
+      "id": 8,
+      "rating": 5
     }
-  ]
+  ],
+  "reviews": []
 }

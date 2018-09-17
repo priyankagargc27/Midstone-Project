@@ -12,6 +12,7 @@ export default class RecipeForm extends Component {
         image:"",
         ingredients : "",
         direction: "",
+        
         userId: JSON.parse(sessionStorage.getItem("userInfo")).userId
     }
     //const user = JSON.parse(sessionStorage.getItem("userinfo"))

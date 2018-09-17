@@ -14,9 +14,7 @@ export default class Profile extends Component {
                         this.props.profiles.map(profile =>
                             <div key={profile.id} className="card">
                                 <div className="card-body">
-                                    {/* <h5 className="card-title" className="recipe-name">
-                                        {recipe.title}
-                                    </h5> */}
+                                   
                                     <h6>
                                     <img top width="30%" src={profile.Image} className="profile--image" />
                                          <br/>  {profile.name}
@@ -27,20 +25,7 @@ export default class Profile extends Component {
                               
                                    
                                     
-                                        {/* <Link className="nav-link" to={`${article.url}`}>Details</Link> */}
-                                    
-                                    
-                                        {/* <button type="button" className="btn btn-primary"
-                                            onClick={() => this.props.deleteArticle(article.id, "articles")}>Delete</button>
-                                     */}
-
-                                    {/* <button type="button" className="btn btn-primary"
-                                            onClick={() => this.props.history.push(`/articles/Edit/${article.id}`)}>Edit</button> */}
-                            {/* //         <a href="#"
-                            // onClick={() =>  this.props.history.push(`/articles/Edit/${article.id}`)}
-                        
-                            //     className="card-link">Edit</a> */}
-
+                                       
                                     </h6> 
                                 </div>
                             </div>
@@ -48,7 +33,7 @@ export default class Profile extends Component {
                     }
                 </section>
                 <p></p>
-                <div className="profileButton">
+                {/* <div className="profileButton">
                     <button type="button"
                         className="btn btn-primary"
                         onClick={() => {
@@ -56,7 +41,7 @@ export default class Profile extends Component {
                         }
                         }>Create New Profile
                 </button>
-                </div>
+                </div> */}
             </React.Fragment>
         )
     }

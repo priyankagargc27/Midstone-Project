@@ -41,8 +41,11 @@ export default class Login extends Component {
                 console.log("hello")
                 sessionStorage.setItem("userInfo", loginObj);
                 
+                
+                window.location.href="http://localhost:3000/Profile"
             }
-            } else {
+        } 
+        else {
               alert(
                 "Incorrect User Name or Password."
               );
@@ -52,7 +55,8 @@ export default class Login extends Component {
         }
       render() {
         return (
-            <div className="login">
+            <div className="forms">
+            <div className="loginForm">
             <form onSubmit={this.handleLogin}>
                 <h2> Please Login </h2>
                  <label>Email</label>
@@ -75,6 +79,7 @@ export default class Login extends Component {
                 Submit
                 </button>
             </form>
+            </div>
             </div>
         )
     }
