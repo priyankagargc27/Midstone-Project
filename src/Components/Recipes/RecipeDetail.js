@@ -27,13 +27,7 @@ export default class RecipeDetail extends Component {
         })        
     
     }
-    addReview = review => APIManager.post("reviews", review)
-    .then(() => APIManager.getAllData("reviews"))
-    .then(reviews => this.setState({
-        reviews: reviews
-        
-
-    }))
+   
 
     
     
@@ -82,36 +76,32 @@ export default class RecipeDetail extends Component {
                            
                         
 
-                            <AddReview/>
+                            <AddReview addReview={this.props.addReview}/>
                             <section className="reviews">
                     {
                         this.props.reviews.map(review =>
+                            //  let currentUser = this.props.users.find(u => u.id === review.userId);
+                            
                             <div key={review.id} className="card">
-                                <div className="card-body">
+                               
                                     <p className="card-title" className="review-name">
                                         {review.review}
                                     </p>
-                                    <br/>
-                                    
-                                    <time>Sent on:{review.time}</time>
-                                    <h5>By:{review.userName}</h5>
+
+                                     <time>
+                                     <i class="fa fa-calendar" aria-hidden="true"></i>Posted on:{review.time}</time>
+                                    <h6>By: {this.props.userId}</h6>
 
 
                         
                                 </div>
-                            </div>
-                        )
-                    }
+                        
+                         ) }
+                
+                    
+                
                 </section>
-                <div className="reviewButton">
-                    <button type="button"
-                        className="btn btn-primary"
-                        onClick={() => {
-                            this.props.history.push("/reviews/new")
-                        }
-                        }>Create New Review
-                </button>
-                </div>
+                
                             
 
                     </div>

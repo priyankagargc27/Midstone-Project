@@ -82,14 +82,14 @@ export default class ApplicationViews extends Component {
        
     //      }
    
-    
-    // addReview = review => APIManager.post("reviews", review)
-    // .then(() => APIManager.getAllData("reviews"))
-    // .then(reviews => this.setState({
-    //     reviews: reviews
+    addReview = review => APIManager.post("reviews", review)
+    .then(() => APIManager.getAllData("reviews"))
+    .then(reviews => this.setState({
+        reviews: reviews
         
 
-    // }))
+    }))
+   
     addRecipe = recipe => APIManager.post("recipes", recipe)
         .then(() => APIManager.getAllData("recipes"))
         .then(recipes => this.setState({
@@ -98,7 +98,7 @@ export default class ApplicationViews extends Component {
         }))
     deleteRecipe = id => APIManager.delete("recipes", id)
         .then(() => {
-            APIManager.getAllData("reciepe")
+            APIManager.getAllData("recipes")
                 .then(recipes => this.setState({
                     recipes: recipes
                 }))

@@ -12,7 +12,7 @@ export default class RecipeForm extends Component {
         image:"",
         ingredients : "",
         direction: "",
-        
+
         userId: JSON.parse(sessionStorage.getItem("userInfo")).userId
     }
     //const user = JSON.parse(sessionStorage.getItem("userinfo"))
@@ -34,7 +34,7 @@ export default class RecipeForm extends Component {
              image:this.state.image,
              ingredients:this.state.ingredients,
              direction:this.state.direction,
-             userId: JSON.parse(sessionStorage.getItem("userInfo")).userId
+        userId: JSON.parse(sessionStorage.getItem("userInfo")).userId
 
             }
             

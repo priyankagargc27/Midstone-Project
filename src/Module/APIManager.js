@@ -6,9 +6,10 @@ export default Object.create(null, {
             return fetch(`${remoteURL}/${object}`).then(e => e.json());
         }
     },
-    get: {
-        value: function (object, id) {
-            return fetch(`${remoteURL}/${object}/${id}`).then(e => e.json())
+    
+    getOneRecipe: {
+        value: function (recipeId) {
+            return fetch(`http://localhost:5002/recipes/${recipeId}`).then(e => e.json())
         }
     },
     getAllData: {
@@ -57,7 +58,7 @@ export default Object.create(null, {
     value: function (id, body)  {
         console.log(body)
       return fetch(`http://localhost:5002/recipes/${id}`, {
-          method: "PATCH",
+          method: "POST",
           headers: {
               "Content-Type": "application/json"
           },

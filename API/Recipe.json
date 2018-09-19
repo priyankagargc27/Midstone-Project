@@ -56,7 +56,7 @@
       "direction": "Heat oil in a pan add chopped onions, chopped ginger, and garlic, red chilly, add red bell pepper, tomatoes, kasoori methi, salt, put the lid on and cook this on a slow flame till tomatoes and bell peppers are tender. Let it cool down put this into a blender make a paste. Heat butter in a pan add curry powder, cook this for 4 minutes, add tomato, bell pepper, paste, mix it. Once come to boil add paneer, cream, mix this and cook it for 5 minutes and switch off the flame.",
       "userId": 1,
       "id": 5,
-      "rating": 5
+      "rating": 3
     },
     {
       "title": "Vegetable Biryani",
@@ -87,7 +87,50 @@
       "userId": 1,
       "id": 8,
       "rating": 5
+    },
+    {
+      "title": "Egg Cube Curry",
+      "cookTime": "30 Minutes",
+      "image": "http://1.bp.blogspot.com/-md0B2LIGQgk/T1w8K0Z1LPI/AAAAAAAACLA/qkJqaDpLgl4/s1600/IMG_0219.JPG",
+      "ingredients": "• Coriander leaves (chopped) - 1 bunch. • Red chilli powder - half tea spoon. • Coriander powder - 1 tablespoon. • Raw pistachio powder - 1 tea spoon. • Tomato puree - half cup. • Ginger garlic paste - 1 ½ tea spoon. • Milk - 2 cups. • Onion (chopped) - 1 number. • Cumin seeds - 1 tea spoon. • Mustard seeds - 1 tea spoon. • Eggs - 10 number. • Cilantro (chopped) - half bunch. • Salt - to taste. • Oil - as required.",
+      "direction": "In a bowl add onions, Cumin seeds, cilantro, redchilli powder, salt, garam masala powder along with eggs. Whisk the mixture well. Transfer the mixture to another container steam it. It can be steamed in oven or the steamer. Cut the steamed eggs into cubes .These cubes can be used in any kind of curry. For Milk sauce curry :-  Take a pan add oil in it. Add mustard seeds allow it to crackle then add cumin seeds , onions, salt, turmeric, ginger garlic paste, raw pista powder saute well. Add milk to the mixture bring it to a boil.Then add coriander powder, chilli powder, mix well. Reduce the heat add tomato puree at once to avoid curdling of milk. Add salt ,coriander leaves cook the sauce further. Add egg cubes at this point cook for 2 minutes.",
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "title": "Spinach And Corn Fritters",
+      "cookTime": "25 minutes",
+      "image": "https://i.ytimg.com/vi/WoppETxuZhs/maxresdefault.jpg",
+      "ingredients": "• Carrot (grated) - 1 number. • Spinach (chopped) - 1 bunch. • Nut meg - 1 pinch. • Salt - to taste. • Onion (chopped) - 1 number. • Butter - 3 tea spoon. • Corn - 1/2 cup. • Milk - 1+1/2 cup. • All purpose flour/maida - 1/2 cup. • Egg - 1/2 number. • Garlic (chopped) - 1 tablespoon. • Olive oil - 2 tablespoons.",
+      "direction": "Take some butter in a hot pan add chopped garlic, chopped onion, salt, nutmeg powder, all-purpose flour cook this until raw flavour is gone. Add corn, cook it for some time, add milk in small quantities, keep mixing it. Then put chopped spinach, grated carrot, egg, mix this cook it on slow flame then transfer it to another bowl. Heat olive oil in a pan, add small fritters of the mixture, fry them.",
+      "userId": 1,
+      "id": 10
     }
   ],
-  "reviews": []
+  "reviews": [
+    {
+      "review": "looks good",
+      "time": "9/17/2018, 4:05:02 PM",
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "review": "add some more recipe",
+      "time": "9/18/2018, 9:41:48 AM",
+      "userId": 5,
+      "id": 8
+    },
+    {
+      "review": "add pinch of salt",
+      "time": "9/18/2018, 11:28:46 AM",
+      "userId": 5,
+      "id": 9
+    },
+    {
+      "review": "hello",
+      "time": "9/18/2018, 11:30:22 AM",
+      "userId": 5,
+      "id": 10
+    }
+  ]
 }

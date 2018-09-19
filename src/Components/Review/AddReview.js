@@ -1,5 +1,6 @@
 import React, { Component }  from 'react'
-import APIManager from "../../Module/APIManager";
+import {Redirect} from 'react-router-dom'
+//import APIManager from "../../Module/APIManager";
 
 export default class AddReview extends Component {
 
@@ -7,6 +8,9 @@ export default class AddReview extends Component {
         review: "",
         time:"",
      userId: JSON.parse(sessionStorage.getItem("userInfo")).userId
+    // recipeId: parseInt(this.props.match.params.recipeId)
+
+
     
     }
 
@@ -31,16 +35,17 @@ export default class AddReview extends Component {
         evt.preventDefault()
         const review = {
             review:this.state.review,
-           time: new Date().toLocaleString()
-           //userId: this.props.users.find(u => u.name === this.state.user).id
+           time: new Date().toLocaleString(),
+           userId: JSON.parse(sessionStorage.getItem("userInfo")).userId,
            //time:Date.now()
-        
+        //   recipeId: parseInt(this.props.match.params.recipeId)
+
         
            }
           
   
            console.log("hello")
-           this.props.addReview(review, "reviews").then(() => this.props.history.push("/reviews"))
+           this.props.addReview(review, "reviews").then(() => <Redirect to="/reviews"/>)
 }
    
 
@@ -48,17 +53,17 @@ render() {
     return (
        <React.Fragment>
             <form  onSubmit={this.MakeNewReview} >
-           <div className="messageContainer">
+           <div className="reviewContainer">
              <h5>Comments & Reviews</h5>
-          <form className="eventForm">
+          <form className="reviewForm">
              <div className="form-group">
-                <label htmlFor="Review">Add a Review</label>
+                <label htmlFor="review">Add a Review</label>
                 <input type="text" required="true"
                    className="form-control"
                    onChange={this.handleFieldChange}
                    id="review"
 
-                   
+                   value={this.state.review}
                    placeholder="Write a review" />
                     </div>
                     <button type="submit" onClick={this.MakeNewReview} className="btn btn-primary">Submit</button>
