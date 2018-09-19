@@ -7,12 +7,15 @@ export default class AddReview extends Component {
     state= {
         review: "",
         time:"",
+        name:"",
      userId: JSON.parse(sessionStorage.getItem("userInfo")).userId
-    // recipeId: parseInt(this.props.match.params.recipeId)
+     
 
 
     
     }
+    user = () => JSON.parse(sessionStorage.getItem("userInfo"))
+
 
     handleFieldChange = evt => {
         console.log("evt handleFieldChange", evt);
@@ -33,15 +36,22 @@ export default class AddReview extends Component {
     
      MakeNewReview = evt => {
         evt.preventDefault()
+        console.log("user name",this.user.name)
         const review = {
             review:this.state.review,
            time: new Date().toLocaleString(),
-           userId: JSON.parse(sessionStorage.getItem("userInfo")).userId,
+           name: JSON.parse(sessionStorage.getItem("userInfo")).name,
+           userId: JSON.parse(sessionStorage.getItem("userInfo")).userId
+          
            //time:Date.now()
         //   recipeId: parseInt(this.props.match.params.recipeId)
 
         
            }
+           this.setState({
+            name: this.user().name,
+            review: ""
+            })
           
   
            console.log("hello")

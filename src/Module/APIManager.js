@@ -39,7 +39,7 @@ export default Object.create(null, {
                 },
                 body: JSON.stringify(object)
             })
-                .then(response => response.json())
+            .then(response => response.json())
         }
     },
     edit: {

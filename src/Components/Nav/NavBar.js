@@ -32,10 +32,10 @@ logoutFunction = ()=>
                         <Link className="nav-link" to="/recipes">Main Entrees</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/Task">Drink</Link>
+                        <Link className="nav-link" to="/drinks">Drink</Link>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="/Events">Dessert</Link>
+                    <Link className="nav-link" to="/desserts">Dessert</Link>
                     </li>
                     <li className ="nav-item">
                     <NavLink href="#" onClick={this.logoutFunction} >Logout</NavLink>

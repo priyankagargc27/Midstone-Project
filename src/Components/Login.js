@@ -1,3 +1,64 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React, { Component } from 'react'
 import APIManager from "../Module/APIManager"
 //import 'bulma/css/bulma.css';
@@ -27,6 +88,7 @@ export default class Login extends Component {
             console.log("user",user);
 
           let loginObj = JSON.stringify({
+              name:this.state.name,
               email: this.state.email,
               password: this.state.password,
               userId: this.state.userId
@@ -53,18 +115,25 @@ export default class Login extends Component {
       })
        
         }
-      render() {
-        return (
+    render() {
+      return (
             <div className="forms">
             <div className="loginForm">
             <form onSubmit={this.handleLogin}>
                 <h2> Please Login </h2>
-                 <label>Email</label>
+                 <label>Name</label>
+                 <input 
+                 id="name"
+                 type="name" 
+                 placeholder="Type Your Name" 
+                 onChange = {this.handleFieldChange} />
+                  <label>Email</label>
                  <input 
                  id="email"
                  type="email" 
                  placeholder="Email Address" 
                  onChange = {this.handleFieldChange} />
+
                  <label>Password</label>
                  <input 
                  id="password"
@@ -81,6 +150,8 @@ export default class Login extends Component {
             </form>
             </div>
             </div>
-        )
-    }
-    }
+
+
+)
+     }
+     }

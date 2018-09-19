@@ -3,12 +3,8 @@ import StarRatingComponent from 'react-star-rating-component';
 import {Button} from 'reactstrap';
 import APIManager from "../../Module/APIManager";
 import AddReview from "../Review/AddReview"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-
-
 import Review from "../Review/Review"
-export default class RecipeDetail extends Component {
+export default class DessertDetail extends Component {
 
     constructor() {
         super();
@@ -24,7 +20,7 @@ export default class RecipeDetail extends Component {
     onStarClick(nextValue, prevValue, name) {
         this.setState({ rating: nextValue });
         
-        let id =  parseInt(this.props.match.params.recipeId)
+        let id =  parseInt(this.props.match.params.dessertId)
         console.log(id)
         let body = {rating: nextValue}  //sets body to updated rating
         APIManager.rating(id, body)
@@ -41,22 +37,22 @@ export default class RecipeDetail extends Component {
     render() {
         // const { goBack } = this.props.navigation;
         const { rating } = this.state;
-        const recipe = this.props.recipes.find(r => r.id === parseInt(this.props.match.params.recipeId)) || {}
-        console.log(recipe)
+        const dessert = this.props.desserts.find(r => r.id === parseInt(this.props.match.params.dessertId)) || {}
+        console.log(dessert)
         return (
-            <section className="recipe">
-                <div key={recipe.id} className="card">
+            <section className="dessert">
+                <div key={dessert.id} className="card">
                     <div className="card-body">
                         <h4 className="card-title">
-                            <img top width="30%" src={recipe.image} className="recipe-image" />
+                            <img top width="30%" src={dessert.image} className="dessert-image" />
                             <br />
-                            {recipe.title}
+                            {dessert.title}
                         </h4>
                         <ul className="ingredientList">
 
                             {
-                                recipe.ingredients.split("•").map(ingredient =>{
-                                    return  <li key={ingredient} className="recipe-ingredients">
+                                dessert.ingredients.split("•").map(ingredient =>{
+                                    return  <li key={ingredient} className="dessert-ingredients">
                                         {ingredient}
                                     </li>
 
@@ -65,13 +61,13 @@ export default class RecipeDetail extends Component {
 
 
                         </ul>
-                        <p className="card-direction">{recipe.direction}</p>
+                        <p className="card-direction">{dessert.direction}</p>
                             <a href="#"
-                                onClick={() => this.props.deleteRecipe(recipe.id)
-                                    .then(() => this.props.history.push("/recipes"))}
+                                onClick={() => this.props.deleteDessert(dessert.id)
+                                    .then(() => this.props.history.push("/desserts"))}
                                 className="card-link">Delete</a>
                         <div>
-                            <h5>Recipe Rating: {rating}</h5>
+                            <h5>Dessert Rating: {rating}</h5>
                             <StarRatingComponent
                                 name="rate1"
                                 starCount={5}
@@ -95,7 +91,7 @@ export default class RecipeDetail extends Component {
                                     </p>
 
                                      <time>
-                                     <FontAwesomeIcon icon="stroopwafel" />Posted on:{review.time}</time>
+                                     <i class="fa fa-calendar" aria-hidden="true"></i>Posted on:{review.time}</time>
                                     <h6>By: {review.name}</h6>
 
 

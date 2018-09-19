@@ -7,10 +7,17 @@ import Home from './Home'
 import RecipeForm from "./Recipes/RecipeForm"
 import RecipeList from "./Recipes/RecipeList"
 import RecipeDetail from './Recipes/RecipeDetail'
+import DessertForm from "./Dessert/DessertForm"
+import DessertList from "./Dessert/DessertList"
+import DessertDetail from './Dessert/DessertDetail'
 
 import ProfileForm from "./Profile/ProfileForm"
 import Profile from "./Profile/Profile"
 import APIManager from "../Module/APIManager"
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faStroopwafel)
 //import AddReview from "../Review/AddReview"
 
 //import UserList from './UserList'
@@ -35,7 +42,8 @@ export default class ApplicationViews extends Component {
         activeUser: localStorage.getItem("usersId"),
         recipes: [],
         profiles: [],
-        reviews:[]
+        reviews: [],
+        desserts: []
         // events:[],
         // messages:[]
 
@@ -55,41 +63,31 @@ export default class ApplicationViews extends Component {
                     profiles: allProfiles
                 })
             })
-            APIManager.getAllData("reviews")
+        APIManager.getAllData("reviews")
             .then(allReviews => {
                 this.setState({
                     reviews: allReviews
                 })
             })
+        APIManager.getAllData("desserts")
+            .then(allDessert => {
+                this.setState({
+                    desserts: allDessert
+                })
+            })
 
     }
 
-    // handleReview = (ReviewObject, recipeId) => {
-    //     //checks to see if usesr is signed in    
-    //      let signedInUser = JSON.parse(localStorage.getItem("userInfo"));
-    //      if (signedInUser === null) {
-    //          signedInUser = JSON.parse(sessionStorage.getItem("userInfo"));
-    //          signedInUser = signedInUser.userId;
-    //      } else {
-    //          signedInUser = signedInUser.userId;
-    //      }
-    //         //runs the patch function on favorites to add review
-    //              APIManager.reviewRecipe("recipes", recipeId, ReviewObject )         
-    //              .then(() => {r=>r.json()
-    //                  //after review is added, refresh user favorites
-    //                  //this.getUserFavorites()
-    //              })
-       
-    //      }
-   
-    addReview = review => APIManager.post("reviews", review)
-    .then(() => APIManager.getAllData("reviews"))
-    .then(reviews => this.setState({
-        reviews: reviews
-        
 
-    }))
-   
+
+    addReview = review => APIManager.post("reviews", review)
+        .then(() => APIManager.getAllData("reviews"))
+        .then(reviews => this.setState({
+            reviews: reviews
+
+
+        }))
+
     addRecipe = recipe => APIManager.post("recipes", recipe)
         .then(() => APIManager.getAllData("recipes"))
         .then(recipes => this.setState({
@@ -101,6 +99,19 @@ export default class ApplicationViews extends Component {
             APIManager.getAllData("recipes")
                 .then(recipes => this.setState({
                     recipes: recipes
+                }))
+        })
+    addDessert = dessert => APIManager.post("desserts", dessert)
+        .then(() => APIManager.getAllData("desserts"))
+        .then(desserts => this.setState({
+            desserts: desserts
+
+        }))
+    deleteDessert = id => APIManager.delete("desserts", id)
+        .then(() => {
+            APIManager.getAllData("desserts")
+                .then(desserts => this.setState({
+                    desserts: desserts
                 }))
         })
     addProfile = profile => APIManager.post("profiles", profile)
@@ -140,9 +151,9 @@ export default class ApplicationViews extends Component {
                 <Route exact path="/recipes" render={(props) => {
                     if (this.isAuthenticated()) {
                         return <RecipeList {...props}
-                            //deleteArticle={this.deleteArticle}
+
                             recipes={this.state.recipes}
-                        // EditArticle={this.EditArticle}
+
                         />
                     } else {
                         return <Redirect to="/Login" />
@@ -155,21 +166,42 @@ export default class ApplicationViews extends Component {
                 }} />
 
                 <Route path="/recipes/:recipeId(\d+)" render={(props) => {
-                    return <RecipeDetail {...props} 
-                    addReview={this.addReview}
-                    reviews={this.state.reviews}
-                    deleteRecipe={this.deleteRecipe} 
-                    recipes={this.state.recipes} />
+                    return <RecipeDetail {...props}
+                        addReview={this.addReview}
+                        reviews={this.state.reviews}
+                        deleteRecipe={this.deleteRecipe}
+                        recipes={this.state.recipes} />
+                }} />
+                
+                
+                <Route exact path="/desserts" render={(props) => {
+                    if (this.isAuthenticated()) {
+                        return <DessertList {...props}
+
+                            desserts={this.state.desserts}
+
+                        />
+                    } else {
+                        return <Redirect to="/Login" />
+                    }
+                }} />
+
+                <Route path="/desserts/new" render={(props) => {
+                    return <DessertForm {...props}
+                        addDessert={this.addDessert} />
+                }} />
+
+                <Route path="/desserts/:dessertId(\d+)" render={(props) => {
+                    return <DessertDetail {...props}
+                        addReview={this.addReview}
+                        reviews={this.state.reviews}
+                        deleteDessert={this.deleteDessert}
+                        desserts={this.state.desserts} />
                 }} />
 
 
-                {/* <Route exact path='/UserList' render={(props) => {
-                    if (this.isAuthenticated()) {
-                        return <UserList/>
-                    } else {
-                        return <Login/>
-                    }
-                }}/> */}
+
+               
 
             </React.Fragment>
         )
