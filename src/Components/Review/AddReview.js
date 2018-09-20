@@ -8,43 +8,48 @@ export default class AddReview extends Component {
         review: "",
         time:"",
         name:"",
-     userId: JSON.parse(sessionStorage.getItem("userInfo")).userId
-     
+        userId: JSON.parse(sessionStorage.getItem("userInfo")).userId,
+        //userId: JSON.parse(localStorage.getItem("userInfo")).userId,
 
-
-    
+        // recipeId: parseInt(this.props.match.params.recipe.recipeId)
+        
+        
+        
+        
     }
     user = () => JSON.parse(sessionStorage.getItem("userInfo"))
-
-
+    
+    
     handleFieldChange = evt => {
         console.log("evt handleFieldChange", evt);
         const stateToChange = {}
         stateToChange[evt.target.id] = evt.target.value
         this.setState(stateToChange)
-     }
+    }
     
-
+    
     //  addReview = review => APIManager.post("reviews", review)
     //  .then(() => APIManager.getAllData("reviews"))
     //  .then(reviews => this.setState({
-    //      reviews: reviews
-         
- 
-    //  }))
-    
-    
-     MakeNewReview = evt => {
-        evt.preventDefault()
-        console.log("user name",this.user.name)
-        const review = {
-            review:this.state.review,
-           time: new Date().toLocaleString(),
-           name: JSON.parse(sessionStorage.getItem("userInfo")).name,
-           userId: JSON.parse(sessionStorage.getItem("userInfo")).userId
-          
-           //time:Date.now()
-        //   recipeId: parseInt(this.props.match.params.recipeId)
+        //      reviews: reviews
+        
+        
+        //  }))
+        
+        
+        MakeNewReview = evt => {
+            evt.preventDefault()
+            console.log("user name",this.user.name)
+            const review = {
+                review:this.state.review,
+                time: new Date().toLocaleString(),
+                name: JSON.parse(sessionStorage.getItem("userInfo")).name,
+                userId: JSON.parse(sessionStorage.getItem("userInfo")).userId,
+               // userId: JSON.parse(localStorage.getItem("userInfo")).userId,
+
+                //recipeId: parseInt(this.props.match.params.recipeId,10)
+                
+                
 
         
            }

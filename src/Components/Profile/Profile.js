@@ -2,38 +2,44 @@
 
 import React, { Component } from 'react'
 import { Link } from "react-router-dom"
-//import "./Recipe.css"
+import "./Profile.css"
  //import "./Article.css"
 
 export default class Profile extends Component {
     render() {
         return (
             <React.Fragment>
-                <section className="profiles">
+                <div className="myprofile">
+                <div className="profile-card">
                     {
                         this.props.profiles.map(profile =>
                             <div key={profile.id} className="card">
                                 <div className="card-body">
                                    
-                                    <h6>
-                                    <img top width="30%" src={profile.Image} className="profile--image" />
-                                         <br/>  {profile.name}
+                                    <div className="flex-container">
+                                    <div className="profile-pic">
+                                    <img top width="200%" src={profile.Image} className="profile--image" />
+                                    </div>
+                                         <br/>
+                                         <div className="profile-des">
+                                          <h2 className="profile-name"> {profile.name}</h2>
 
                                     <section className="card-title" className="profile-statement">
                                         {profile.statement}
                                     </section>
+                                        </div>
                               
                                    
                                     
                                        
-                                    </h6> 
+                                    </div> 
                                 </div>
                             </div>
                         )
                     }
-                </section>
-                <p></p>
-                {/* <div className="profileButton">
+                </div>
+                {/* <p></p>
+                <div className="profileButton">
                     <button type="button"
                         className="btn btn-primary"
                         onClick={() => {
@@ -42,6 +48,7 @@ export default class Profile extends Component {
                         }>Create New Profile
                 </button>
                 </div> */}
+                </div>
             </React.Fragment>
         )
     }

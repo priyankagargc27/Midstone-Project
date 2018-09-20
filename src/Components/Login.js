@@ -98,6 +98,7 @@ export default class Login extends Component {
                 
                 console.log(loginObj)
                 localStorage.setItem("userInfo", loginObj);
+                window.location.href="http://localhost:3000/Profile"
                 
             } else {
                 console.log("hello")
@@ -117,19 +118,26 @@ export default class Login extends Component {
         }
     render() {
       return (
-            <div className="forms">
+
+
+         
+          <div className="forms">
             <div className="loginForm">
             <form onSubmit={this.handleLogin}>
-                <h2> Please Login </h2>
+                <h2 className="header"> Please Login </h2>
+                <div className="loginField">
                  <label>Name</label>
                  <input 
                  id="name"
+                 class="text"
                  type="name" 
                  placeholder="Type Your Name" 
                  onChange = {this.handleFieldChange} />
                   <label>Email</label>
                  <input 
                  id="email"
+                 class="text"
+
                  type="email" 
                  placeholder="Email Address" 
                  onChange = {this.handleFieldChange} />
@@ -137,7 +145,9 @@ export default class Login extends Component {
                  <label>Password</label>
                  <input 
                  id="password"
-                 type="password" 
+                 type="password"
+                 class="text"
+ 
                  placeholder="Password" 
                  onChange = {this.handleFieldChange}/>
                  <label> Remember Me</label>
@@ -147,11 +157,12 @@ export default class Login extends Component {
                  type="submit">
                 Submit
                 </button>
+                
+                </div>
             </form>
             </div>
             </div>
-
-
-)
-     }
+            
+    )
+         }
      }

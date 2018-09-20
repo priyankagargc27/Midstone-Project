@@ -15,13 +15,13 @@ const Home = props => {
         </Title>
         <p tag="h2">To get started First Register or Sign-In</p>
         <Button>
-            <Link to={{
+            <Link className="SignIn"to={{
                 pathname: "/Login"}}>
                 Sign-in
             </Link>
         </Button>
         <Button>
-            <Link to={{
+            <Link className="Register" to={{
               pathname: "/Register"}}>
               Register
             </Link>

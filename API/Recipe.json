@@ -41,15 +41,34 @@
       "email": "priyanka.g.85@gmail.com",
       "password": "1234",
       "id": 7
+    },
+    {
+      "name": "tuffy2",
+      "email": "priyanka.g.85@gmail.com",
+      "password": "1234",
+      "id": 8
+    },
+    {
+      "name": "",
+      "email": "priyanka.g.85@gmail.com",
+      "password": "1234",
+      "id": 9
+    },
+    {
+      "name": "Aryan",
+      "email": "aryan@test.com",
+      "password": "aryan",
+      "id": 10
     }
   ],
   "profiles": [
+   
     {
-      "name": "Priyanka",
-      "Image": "https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/20914203_10207951459262803_7330418009705849675_n.jpg?_nc_cat=0&oh=a89098b7b98bac53a919f63f65553a38&oe=5C1E3B81",
-      "statement": "I love to Cook Food for my family.",
-      "userId": 2,
-      "id": 3
+      "name": "Priyanka Garg",
+      "Image": "https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/23916019_10208541834301810_7424727836236569917_n.jpg?_nc_cat=108&oh=b915c100f249d4225b35984c0a289903&oe=5C263BFA",
+      "statement": "I was born in North India into a vegetarian family. My mother is an excellent cook who paid attention to every detail. One of the most important details for me is cooking with fresh ingredients. As a child and young adult, I helped my mother in the kitchen. I learned to cook with just a few spices and herbs in order not to compromise the taste of the vegetables, grains and lentils.After I got married and moved to the United States from India in 2010, my family remained vegetarian. I am passionate about this way of life today. I am here to show you simple and practical recipes that carry out the authenticity of Indian vegetarian cooking.",
+      "userId": 1,
+      "id": 4
     }
   ],
   "friends": [
@@ -137,6 +156,42 @@
       "direction": "Heat milk and in some milk add custard powder and dissolve add sugar to milk and bring it to boil. Add the custard and milk mixture to boiling milk and mix continuously till it is thick and coats back of spoon cool down add fruits, cream mix it and, serve cold.",
       "userId": 1,
       "id": 1
+    },
+    {
+      "title": "Cashew Cubes",
+      "cookTime": "25 mins",
+      "image": "https://4.imimg.com/data4/UV/HC/MY-9014222/kaju-barfi-sweets-500x500.jpg",
+      "ingredients": "• Cashew nuts/kaju - 250 grams. • Ground sugar - 100 grams. • Water - 25 ml.",
+      "direction": "Grind cashew nuts, and sugar separately. Make a syrup with sugar and water, boiling only once. Add cashew nuts on low heat. Mix well. Remove from heat onto a smooth surface and roll out (thin) quickly with a rolling pin. At last, cut into squares/diamond shapes and serve it.",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "title": "Sweet Brown Roll",
+      "cookTime": "35 mins",
+      "image": "http://maneshcatering.com/wp-content/uploads/2017/12/GULAB-JAMUN.jpg",
+      "ingredients": "Carnation milk powder - 2 cups. • Sooji - 2 teaspoons. • Milk just enough to make the dough - as required. • Shortening - 2 teaspoons. • Baking powder - 1/2 tea spoon. • All purpose flour - 2 teaspoons. • Sugar - 2 cups. • Oil - 1 to fry. • Rose water - 2 tablespoons. • Water - 2 cups. • Cardamom powder - 1 tea spoon.",
+      "direction": "In a bowl add sugar and water, lime juice bring it to boil if required add rose water also. In another bowl add milk powder, shortening mix well then add maida or all purpose flour, baking powder mix well. Now add the soaked sooji remove the water and mix well. Now add little by little milk and make into a dough and keep aside for 10minutes. After 10minutes make the dough into small ball and deep fry them and add to the sugar syrup.",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "title": "Sweet Cream (Ras-Malai)",
+      "cookTime": "30 mins\t",
+      "image": "https://i0.wp.com/www.morethancurry.com/wp-content/uploads/2017/09/IMG_4334-2.jpg?resize=700%2C467",
+      "ingredients": "Blanched almonds, thinly cut into slivers - 5-6 number. • Green cardamom seed powder or a little rose essence - 1 tea spoon. • Sugar for rabadi - 4 tablespoons. • Milk for making rabri - 1000 ml. • Water - 6 cups. • Sugar - 1 cup. • Soft paneer made from milk - 1000 ml.",
+      "direction": "Make paneer as instructed, hang in muslin for 1 hour, but do not press it. Boil water, add 1 cup of sugar and 6 cups of water in a deep vessel until it boils vigorusly. Knead paneer until very smooth with in the cloth . Make into walnut sized balls, flattening them a little, like a peda or a small burger. Adding to boiling water/sugar water and boil at high flame and the rasgullas will be ready in 10 min Remove and let it sit in some of same syrup till it cools down sqeeze out the water and soak in rabadi.serve garnished with flakes of almonds.",
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "title": "Carrot Pudding",
+      "cookTime": "35 mins",
+      "image": "http://3.bp.blogspot.com/-H_ZMFG9KlKA/Us2MmJ5nZpI/AAAAAAAAFUI/nVdBDsQuvxo/s1600/Halva001L.jpg",
+      "ingredients": "Ghee (clarified butter) - 2 teaspoons. • Casewnuts - 1 tablespoon. • Cardamoms (skinned and crushed fine) - 2 number. • Carrots (grated finely) - 4 cup. • Milk - 4 cup. • Sugar - 1 cup. • Curdled milk or ricotta cheese - 3 tablespoons. • Almonds (chopped) - 1 tablespoon. • Raisins - 1 tea spoon.",
+      "direction": "Roast dry fruits in ghee and keep aside. Grate and cook the carrots by pouring milk in an open pan on low flame,with constant stirring. When carrot is cooked, add sugar and cook untilit gets to a slightly thicker consistency. Then add curdled milk or koya and cook for few more minutes with constant stirring.",
+      "userId": 1,
+      "id": 5
     }
   ],
   "reviews": [
@@ -160,6 +215,19 @@
       "name": "Priyanka",
       "userId": 1,
       "id": 16
+    },
+    {
+      "review": "post more recipe",
+      "time": "9/19/2018, 3:40:03 PM",
+      "userId": 1,
+      "id": 17
+    },
+    {
+      "review": "post more recipe",
+      "time": "9/19/2018, 3:40:34 PM",
+      "name": "Priyanka",
+      "userId": 1,
+      "id": 18
     }
   ]
 }

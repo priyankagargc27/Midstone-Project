@@ -1,0 +1,36 @@
+.profile-card{
+    background: 
+        linear-gradient(
+            black,
+            rgb(230, 120, 18));
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0 15px 10px -10px rgba(212, 145, 0, 0.863);
+    flex: 0 1 calc(25% - 1em);
+    margin-bottom: 2em;	
+    justify-content: center;
+    display: inline-block;
+    height: auto;
+    align-self: auto;
+}
+.myprofile{
+    margin-top:67px;
+
+}
+.flex-container
+{
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+    flex-direction:row;
+}
+.profile-des{
+    
+    margin-left:230px;
+}
+/* .profile-pic{
+    
+    height: auto;
+    width:100%;
+    overflow: hidden;
+} */
