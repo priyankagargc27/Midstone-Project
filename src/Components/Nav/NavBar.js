@@ -42,10 +42,10 @@ logoutFunction = ()=>
                     {/* <Link className="nav-link" id="logout" to="/Logout">Logout</Link> */}
                     </li>
                 </ul>
-                <div>
+                {/* <div>
                 <input type="text" value={this.state.search}
                                        onChange={this.updateSearch.bind(this)}/>
-                </div>
+                </div> */}
             </nav>
         )
     }

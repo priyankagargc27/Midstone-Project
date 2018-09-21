@@ -4,6 +4,7 @@ import {Button} from 'reactstrap';
 import APIManager from "../../Module/APIManager";
 import AddReview from "../Review/AddReview"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import "./Recipe.css"
 
 
 
@@ -44,7 +45,7 @@ export default class RecipeDetail extends Component {
         const recipe = this.props.recipes.find(r => r.id === parseInt(this.props.match.params.recipeId)) || {}
         console.log(recipe)
         return (
-            <section className="recipe">
+            <section className="recipe-detail">
                 <div key={recipe.id} className="card">
                     <div className="card-body">
                         <h4 className="card-title">

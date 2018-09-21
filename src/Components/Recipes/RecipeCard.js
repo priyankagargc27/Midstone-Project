@@ -44,7 +44,8 @@ export default class RecipeCard extends Component {
 
         return (
             <React.Fragment>
-                <Card>
+                <div  className="card-body">
+                <Card >
                     <div className="recipe-card">
                         <img top width="30%" src={this.props.recipe.image} className="recipe--image" />
                         <br />
@@ -57,6 +58,7 @@ export default class RecipeCard extends Component {
                         </div>
                     </div>
                 </Card>
+                </div>
             </React.Fragment>
 
 

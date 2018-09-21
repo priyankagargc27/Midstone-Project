@@ -10,24 +10,27 @@
     margin-top:67px;
    
 }
+.card-body{
+}
 .recipe-card {
     /* box-shadow: 0 23px 8px 0 orange; */
     transition: 0.9s;
     width: 40%;
-
+    
     display: flex;    
     flex-direction: column;
     background: 
-        linear-gradient(
-            black,
-            rgb(66, 57, 3));
-    margin: 1em;
+    linear-gradient(
+        black,
+        rgb(66, 57, 3));
+        margin: 1em;
+        display: inline-block;    flex-direction: column;  
     padding: 1em;
     box-shadow: 0 15px 10px -10px rgba(0, 212, 0, 0.6);
     flex: 0 1 calc(25% - 1em);
     margin-bottom: 2em;	
     justify-content: center;
-    display: inline-block;
+    /* display: inline-block; */
     height: auto;
     align-self: auto;
  
@@ -65,4 +68,7 @@
     position: absolute;
 bottom: -120px;
 text-align: center;
+}
+.recipe-detail{
+    margin-top:30px;
 }

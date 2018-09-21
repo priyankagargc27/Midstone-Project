@@ -3,6 +3,8 @@ import StarRatingComponent from 'react-star-rating-component';
 import {Button} from 'reactstrap';
 import APIManager from "../../Module/APIManager";
 import AddReview from "../Review/AddReview"
+import "./Dessert.css"
+
 import Review from "../Review/Review"
 export default class DessertDetail extends Component {
 
@@ -40,7 +42,7 @@ export default class DessertDetail extends Component {
         const dessert = this.props.desserts.find(r => r.id === parseInt(this.props.match.params.dessertId)) || {}
         console.log(dessert)
         return (
-            <section className="dessert">
+            <section className="dessert-detail">
                 <div key={dessert.id} className="card">
                     <div className="card-body">
                         <h4 className="card-title">

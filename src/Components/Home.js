@@ -11,7 +11,7 @@ const Home = props => {
         <Container>
            <Container className="HomeCopy" pad={{vertical: 'none'}} primary={true}>
         <Title isSize="1" className="home-headline">
-          Welcome To Save Recipe Management!
+          Welcome To Recipe Management!
         </Title>
         <p tag="h2">To get started First Register or Sign-In</p>
         <Button>
