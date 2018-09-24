@@ -10,7 +10,7 @@ import StarRatingComponent from 'react-star-rating-component';
 
 import "./Dessert.css"
 
-export default class RecipeList extends Component {
+export default class DessertList extends Component {
     constructor() {
         super();
         this.state = {
@@ -69,14 +69,16 @@ export default class RecipeList extends Component {
             <React.Fragment>
                 <div className="RecipeList">
                     <form className="search-form" >
-                        <label className="ishidden" htmlFor="search">Find Dessert</label>
+                        {/* <label className="ishidden" htmlFor="search">Find Dessert</label> */}
                         <input type="search"
                             name="search"
                             id="searchItem"
                             onChange={this.handleSearchField}
-                            placeholder="Search for recipe" />
-                        <Button isColor="info" type="submit" id="submit" className="search-button" onClick={this.searchDesserts}>
-                            Submit</Button>
+                            placeholder="Search for desserts ..." />
+            <input type="submit" class="search-submit" value="" onClick={this.searchDesserts}/>
+
+                        {/* <Button isColor="info" type="submit" id="submit" className="search-button" onClick={this.searchDesserts}>
+                            Submit</Button> */}
 
 
                     </form>

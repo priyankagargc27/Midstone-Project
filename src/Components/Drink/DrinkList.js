@@ -1,23 +1,22 @@
 
 
 import React, { Component } from 'react'
-import RecipeCard from "./RecipeCard"
+import DrinkCard from "./DrinkCard"
 import APIManager from "../../Module/APIManager";
 import { Button } from 'bloomer'
 
 import { Link } from "react-router-dom"
 import StarRatingComponent from 'react-star-rating-component';
 
-import "./Recipe.css"
-//import "./Article.css"
+import "./Drink.css"
 
-export default class RecipeList extends Component {
+export default class DrinkList extends Component {
     constructor() {
         super();
         this.state = {
             searchItem: "",
             searchMode: false,
-            searchRecipes: null
+            searchDrink: null
         }
     }
 
@@ -35,24 +34,25 @@ export default class RecipeList extends Component {
         })
     }
 
-    searchRecipes = (evt) => {
+    searchDrinks = (evt) => {
         evt.preventDefault()
         const SearchItem = this.state.searchItem
 
         if (SearchItem !== "") {
             console.log("searchItem", SearchItem)
-            console.log(`http://localhost:5002/recipes?q=${SearchItem}`)
-            fetch(`http://localhost:5002/recipes?q=${SearchItem}`)
+            console.log(`http://localhost:5002/drinks?q=${SearchItem}`)
+            fetch(`http://localhost:5002/drinks?q=${SearchItem}`)
                 .then(a => a.json())
-                .then((recipes) => {
-                    console.log(recipes)
+                .then((drinks) => {
+                    console.log(drinks)
                     this.setState({
-                        searchRecipes: recipes,
-                        searchMode: true
+                        searchDrink: drinks,
+                        searchMode:true
                     })
                     console.log("search full")
                 })
-        } else {
+        } else  {
+            
 
             console.log("search empty")
 
@@ -70,14 +70,25 @@ export default class RecipeList extends Component {
             <React.Fragment>
                 <div className="RecipeList">
                     <form className="search-form" >
+                        {/* <label className="Find-drink" htmlFor="search">Find Drink</label> */}
                         <input type="search"
                             name="search"
                             id="searchItem"
                             onChange={this.handleSearchField}
-                            placeholder="Search for recipes ..." />
-                    <input type="submit" className="search-submit" value="" onClick={this.searchRecipes}/>
+                            placeholder="Search for drinks ..." />
+                            <input type="submit" class="search-submit" value="" onClick={this.searchDrinks}/>
+                            
+                            {/* {this.state.searchItem ==null &&
+                            <div>{
+                                
+                                <p>Sorry, but nothing matched your search terms. Please try again with different keywords.
 
-                        {/* <Button isColor="info" type="submit" id="submit" className="search-button" onClick={this.searchRecipes}>
+</p>
+                            }
+</div>
+                            }             */}
+                            
+                        {/* <Button isColor="info" type="submit" id="submit" className="search-button" onClick={this.searchDrinks}>
                             Submit</Button> */}
 
 
@@ -85,11 +96,11 @@ export default class RecipeList extends Component {
                     {this.state.searchMode === true &&
 
                         <div>
-
+                           
                             {
-                                this.state.searchRecipes.map(recipe =>
-                                    <RecipeCard key={recipe.id}
-                                        recipe={recipe} {...this.props} />
+                                this.state.searchDrink.map(drink =>
+                                    <DrinkCard key={drink.id}
+                                    drink={drink} {...this.props} />
                                 )
                             }
                         </div>
@@ -97,24 +108,24 @@ export default class RecipeList extends Component {
                     }
                     {this.state.searchMode === false &&
                         <div>
-
+                            
                             {
-                                this.props.recipes.map(recipe =>
-                                    <RecipeCard key={recipe.id}
-                                        recipe={recipe} {...this.props} />
+                                this.props.drinks.map(drink =>
+                                    <DrinkCard key={drink.id}
+                                    drink={drink} {...this.props} />
                                 )
                             }
                         </div>
                     }
 
 
-                    <div className="recipeButton">
+                    <div className="drinkButton">
                         <button type="button"
                             className="btn btn-primary"
                             onClick={() => {
-                                this.props.history.push("/recipes/new")
+                                this.props.history.push("/drinks/new")
                             }
-                            }>Create New Recipe</button>
+                            }>Create New Drink</button>
                     </div>
                 </div>
             </React.Fragment>

@@ -4,13 +4,42 @@
 .nav.nav-pills li{
     color:red;
 }
-
 nav{
-background-color:goldenrod;
+
+background-color:rgb(19, 15, 7);
+justify-content: center;
+
+/* background-color:linear-gradient(red, rgb(157, 255, 0)); */
+
 } 
-a.nav-link{
-color:brown;
+nav:hover{
+    opacity: .9;
+
+
 }
+a.nav-link{
+    
+color:brown;
+
+}
+a.nav-link:active {
+    background-color: rgb(207, 119, 18);
+    color: white;
+}
+a.nav-link:hover{
+    background-color: rgba(218, 125, 20, 0.966);
+    color: black;
+    text-decoration: none;
+    text-shadow: none;
+}
+
 #logout{
-color:yellow;
+    margin-left:845px; 
+
+}
+#home{
+
+    color: orange !important;
+    font-weight: bold;
+    font-style: italic;
 }

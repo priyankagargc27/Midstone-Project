@@ -5,14 +5,14 @@ import {
     Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button
 } from 'reactstrap';
-import "./Dessert.css"
+import "./Drink.css"
 
 
 
 
 
 
-export default class DessertCard extends Component {
+export default class DrinkCard extends Component {
 
 
     constructor() {
@@ -28,13 +28,13 @@ export default class DessertCard extends Component {
 
 
     state = {
-        showDessertDetails: false,
+        showDrinkDetails: false,
 
 
 
     }
-    showDessertDetails = () => {
-        this.setState({ showDessertDetails: true })
+    showDrinkDetails = () => {
+        this.setState({ showDrinkDetails: true })
 
 
 
@@ -45,10 +45,10 @@ export default class DessertCard extends Component {
         return (
             <React.Fragment>
                     <div className="card-body">
-                        <img width="30%" src={this.props.dessert.image} className="dessert--image" />
+                        <img width="30%" src={this.props.drink.image} className="drink--image" />
                         <br />
                         {/* <div class="container"> */}
-                            <Link className="des-link" to={`/desserts/${this.props.dessert.id}`}>{this.props.dessert.title}</Link>
+                            <Link className="dri-link" to={`/drinks/${this.props.drink.id}`}>{this.props.drink.title}</Link>
 
 
 

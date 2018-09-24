@@ -14,7 +14,7 @@ export default class Profile extends Component {
                     {
                         this.props.profiles.map(profile =>
                             <div key={profile.id} className="card">
-                                <div className="card-body">
+                                <div className="cardbody">
                                    
                                     <div className="flex-container">
                                     <div className="profile-pic">

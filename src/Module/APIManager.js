@@ -54,11 +54,11 @@ export default Object.create(null, {
         }
     },
 
-    rating:{
+    postrating:{
     value: function (id, body)  {
         console.log(body)
       return fetch(`http://localhost:5002/recipes/${id}`, {
-          method: "POST",
+          method: "PATCH",
           headers: {
               "Content-Type": "application/json"
           },

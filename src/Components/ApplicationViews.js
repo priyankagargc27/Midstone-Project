@@ -10,7 +10,9 @@ import RecipeDetail from './Recipes/RecipeDetail'
 import DessertForm from "./Dessert/DessertForm"
 import DessertList from "./Dessert/DessertList"
 import DessertDetail from './Dessert/DessertDetail'
-
+import DrinkForm from "./Drink/DrinkForm"
+import DrinkList from "./Drink/DrinkList"
+import DrinkDetail from './Drink/DrinkDetail'
 import ProfileForm from "./Profile/ProfileForm"
 import Profile from "./Profile/Profile"
 import APIManager from "../Module/APIManager"
@@ -43,7 +45,8 @@ export default class ApplicationViews extends Component {
         recipes: [],
         profiles: [],
         reviews: [],
-        desserts: []
+        desserts: [],
+        drinks:[]
         // events:[],
         // messages:[]
 
@@ -75,6 +78,12 @@ export default class ApplicationViews extends Component {
                     desserts: allDessert
                 })
             })
+            APIManager.getAllData("drinks")
+            .then(allDrink => {
+                this.setState({
+                    drinks: allDrink
+                })
+            })
 
     }
 
@@ -94,6 +103,7 @@ export default class ApplicationViews extends Component {
             recipes: recipes
 
         }))
+
     deleteRecipe = id => APIManager.delete("recipes", id)
         .then(() => {
             APIManager.getAllData("recipes")
@@ -112,6 +122,19 @@ export default class ApplicationViews extends Component {
             APIManager.getAllData("desserts")
                 .then(desserts => this.setState({
                     desserts: desserts
+                }))
+        })
+        addDrink = drink => APIManager.post("drinks", drink)
+        .then(() => APIManager.getAllData("drinks"))
+        .then(drinks => this.setState({
+            drinks: drinks
+
+        }))
+        deleteDrink = id => APIManager.delete("drinks", id)
+        .then(() => {
+            APIManager.getAllData("drinks")
+                .then(drinks => this.setState({
+                    drinks: drinks
                 }))
         })
     addProfile = profile => APIManager.post("profiles", profile)
@@ -197,6 +220,31 @@ export default class ApplicationViews extends Component {
                         reviews={this.state.reviews}
                         deleteDessert={this.deleteDessert}
                         desserts={this.state.desserts} />
+                }} />
+
+                 <Route exact path="/drinks" render={(props) => {
+                    if (this.isAuthenticated()) {
+                        return <DrinkList {...props}
+
+                            drinks={this.state.drinks}
+
+                        />
+                    } else {
+                        return <Redirect to="/Login" />
+                    }
+                }} />
+
+                <Route path="/drinks/new" render={(props) => {
+                    return <DrinkForm {...props}
+                        addDrink={this.addDrink} />
+                }} />
+
+                <Route path="/drinks/:drinkId(\d+)" render={(props) => {
+                    return <DrinkDetail {...props}
+                        addReview={this.addReview}
+                        reviews={this.state.reviews}
+                        deleteDrink={this.deleteDrink}
+                        drinks={this.state.drinks} />
                 }} />
 
 

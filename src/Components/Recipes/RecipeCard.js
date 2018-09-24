@@ -44,21 +44,26 @@ export default class RecipeCard extends Component {
 
         return (
             <React.Fragment>
-                <div  className="card-body">
-                <Card >
-                    <div className="recipe-card">
+                {/* <div className="row"> */}
+                {/* <Card > */}
+                <div  className="recipeCard-body">
+                    {/* <div className="recipe-card"> */}
                         <img top width="30%" src={this.props.recipe.image} className="recipe--image" />
                         <br />
-                        <div class="container">
+                        {/* <div class="container"> */}
                             <Link className="rec-link" to={`/recipes/${this.props.recipe.id}`}>{this.props.recipe.title}</Link>
 
 
 
 
-                        </div>
-                    </div>
-                </Card>
+
+
+
+                        {/* </div> */}
+                    {/* </div> */}
                 </div>
+                {/* </Card> */}
+                {/* </div> */}
             </React.Fragment>
 
 

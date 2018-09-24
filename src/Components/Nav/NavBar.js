@@ -26,7 +26,7 @@ logoutFunction = ()=>
             <nav className="navbar navbar-light fixed-top light-blue flex-md-nowrap p-0 shadow">
                 <ul className="nav nav-pills">
                     <li className="nav-item">
-                        <Link className="nav-link" to="/Profile">Home</Link>
+                        <Link className="nav-link" id="home"to="/Profile">Home</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/recipes">Main Entrees</Link>
@@ -37,8 +37,9 @@ logoutFunction = ()=>
                     <li className="nav-item">
                     <Link className="nav-link" to="/desserts">Dessert</Link>
                     </li>
+                    
                     <li className ="nav-item">
-                    <NavLink href="#" onClick={this.logoutFunction} >Logout</NavLink>
+                    <NavLink href="#" onClick={this.logoutFunction} id="logout" >Logout</NavLink>
                     {/* <Link className="nav-link" id="logout" to="/Logout">Logout</Link> */}
                     </li>
                 </ul>
@@ -47,6 +48,7 @@ logoutFunction = ()=>
                                        onChange={this.updateSearch.bind(this)}/>
                 </div> */}
             </nav>
+            
         )
     }
 }

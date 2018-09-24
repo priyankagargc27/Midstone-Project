@@ -87,12 +87,12 @@
     {
       "title": "chesse Gravy",
       "cookTime": "12-15 inutes",
-      "image": "https://catering.gofoodpng.biz/wp-content/uploads/2018/03/Paneer-Butter-Masala.jpg",
+      "image": "https://rasoise.files.wordpress.com/2014/05/26.jpg",
       "ingredients": "• Cheese Cubes - 250 grams. • Curry powder - 1 tablespoon. • Butter - 2 tablespoons. • Tomatoes - 3 numbers. • Red bell pepper - 1 number. • Red chilly - 2 numbers. • Ginger - 1 piece. • Onion (medium size) - 1 number. • Oil - 1 tablespoon. • Cream - 2 tablespoons. • Kasoori methi - ½ tea spoon. • Salt - to taste. • Garlic - 4 cloves.",
       "direction": "Heat oil in a pan add chopped onions, chopped ginger, and garlic, red chilly, add red bell pepper, tomatoes, kasoori methi, salt, put the lid on and cook this on a slow flame till tomatoes and bell peppers are tender. Let it cool down put this into a blender make a paste. Heat butter in a pan add curry powder, cook this for 4 minutes, add tomato, bell pepper, paste, mix it. Once come to boil add paneer, cream, mix this and cook it for 5 minutes and switch off the flame.",
       "userId": 1,
       "id": 5,
-      "rating": 3
+      "rating": 5
     },
     {
       "title": "Vegetable Biryani",
@@ -102,7 +102,7 @@
       "direction": "Take a pan add oil,garam masala, saute it add jeera, ginger garlic paste, vegetables cut a little bit long size mix well and add salt, need to cook till they are half cooked. Now add mint, coriander, green chillies, biryani masala mix half cup of curd, add paneer. Soak rice for 1 hr in abowl. Now boil water add rice to it, let the rice to be cooked half (70%) and strain the rice. Take a biryani bowl add half of the cooked vegetables spread all over the pan add some curd, nuts if required, salt, fry onions, add half rice, repeat the same process again. Lastly add fried onions, bread, close it with a lid, and cook it for 5 minutes on a very slow flame.",
       "userId": 1,
       "id": 6,
-      "rating": 5
+      "rating": 2
     },
     {
       "title": "Baby Corn Chilli Fry",
@@ -136,7 +136,7 @@
     {
       "title": "Spinach And Corn Fritters",
       "cookTime": "25 minutes",
-      "image": "https://i.ytimg.com/vi/WoppETxuZhs/maxresdefault.jpg",
+      "image": "https://smittenkitchendotcom.files.wordpress.com/2018/07/corn-fritters.jpg?w=750",
       "ingredients": "• Carrot (grated) - 1 number. • Spinach (chopped) - 1 bunch. • Nut meg - 1 pinch. • Salt - to taste. • Onion (chopped) - 1 number. • Butter - 3 tea spoon. • Corn - 1/2 cup. • Milk - 1+1/2 cup. • All purpose flour/maida - 1/2 cup. • Egg - 1/2 number. • Garlic (chopped) - 1 tablespoon. • Olive oil - 2 tablespoons.",
       "direction": "Take some butter in a hot pan add chopped garlic, chopped onion, salt, nutmeg powder, all-purpose flour cook this until raw flavour is gone. Add corn, cook it for some time, add milk in small quantities, keep mixing it. Then put chopped spinach, grated carrot, egg, mix this cook it on slow flame then transfer it to another bowl. Heat olive oil in a pan, add small fritters of the mixture, fry them.",
       "userId": 1,
@@ -156,7 +156,7 @@
     {
       "title": "Fruit Custard",
       "cookTime": "30-35 minutes",
-      "image": "https://i2.wp.com/mypullzone-9vexd6dl53at.netdna-ssl.com/wp-content/uploads/2017/01/fruit-custard-recipe-step-by-step-instructions.jpg?fit=750%2C609&ssl=1",
+      "image": "https://images.mapsofindia.com/my-india/2013/05/custard-with-fresh-fruits-665x443.jpg",
       "ingredients": "• Sugar - 1-1/2 cup. • Milk - 4 cups. • Custard poder - 1/2 cup. • Mix fruits - 500 grams. • Whipped cream - 100 ml.",
       "direction": "Heat milk and in some milk add custard powder and dissolve add sugar to milk and bring it to boil. Add the custard and milk mixture to boiling milk and mix continuously till it is thick and coats back of spoon cool down add fruits, cream mix it and, serve cold.",
       "userId": 1,
@@ -174,7 +174,7 @@
     {
       "title": "Sweet Brown Roll",
       "cookTime": "35 mins",
-      "image": "http://maneshcatering.com/wp-content/uploads/2017/12/GULAB-JAMUN.jpg",
+      "image": "https://www.mallikasrestaurant.com/wp-content/uploads/2018/04/gulab-jamun.jpg",
       "ingredients": "Carnation milk powder - 2 cups. • Sooji - 2 teaspoons. • Milk just enough to make the dough - as required. • Shortening - 2 teaspoons. • Baking powder - 1/2 tea spoon. • All purpose flour - 2 teaspoons. • Sugar - 2 cups. • Oil - 1 to fry. • Rose water - 2 tablespoons. • Water - 2 cups. • Cardamom powder - 1 tea spoon.",
       "direction": "In a bowl add sugar and water, lime juice bring it to boil if required add rose water also. In another bowl add milk powder, shortening mix well then add maida or all purpose flour, baking powder mix well. Now add the soaked sooji remove the water and mix well. Now add little by little milk and make into a dough and keep aside for 10minutes. After 10minutes make the dough into small ball and deep fry them and add to the sugar syrup.",
       "userId": 1,
@@ -227,6 +227,87 @@
       "name": "Dolly",
       "userId": 11,
       "id": 19
+    },
+    {
+      "review": "good drink",
+      "time": "9/24/2018, 5:36:22 PM",
+      "name": "Priyanka",
+      "userId": 1,
+      "id": 20
+    }
+  ],
+  "drinks": [
+    {
+      "title": "Gypsy Queen",
+      "cookTime": "5-7 minutes",
+      "image": "https://cdn.liquor.com/wp-content/uploads/2012/06/gypsy-queen.jpg",
+      "ingredients": "2 oz Russian Standard Vodka•1 oz Bénédictine•2 dashes Angostura bitters",
+      "direction": "Add all the ingredients to a mixing glass and fill with cracked ice.  Stir, and strain into a chilled cocktail glass.  Twist a swatch of thin-cut lemon peel over the top and discard.",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "title": "Cucumber, Basil & Lime Gimlet",
+      "cookTime": "5-7 minutes",
+      "image": "https://cdn.liquor.com/wp-content/uploads/2013/02/19115113/cucumber-basil-lime-gimlet-720-720-recipe.jpg",
+      "ingredients": "1 1⁄2 oz Vodka Try it with Absolut •2 slices Cucumber (.25 inches)• 1 1⁄2  Fresh basil leaves •1 oz Lemonade• 1⁄4 oz Fresh lime juice",
+      "direction": "Muddle the basil and cucumber in a shaker.  Add the remaining ingredients and ice and shake.  Strain into a rocks glass over fresh ice.  Garnish with a lime wedge or cucumber wheel.",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "title": "Red, White & Night",
+      "cookTime": "7 minutes",
+      "image": "https://cdn.liquor.com/wp-content/uploads/2016/08/03114045/11-Essential-Vodka-Cocktails-to-Try-Right-Now-red-white-and-night-720x720-slideshow.jpg",
+      "ingredients": "2 oz Cabernet sauvignon wine• 2 oz Vodka 1 oz Simple syrup• 1 oz Freshly squeezed lemon juice  ",
+      "direction": "Add all the ingredients to a shaker and fill with ice.  Shake, and strin into a highball glass filled with fresh ice.  Garnish with 3 blueberries or black raspberries coated in powdered sugar.",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "title": "fresh Betel Cocktail",
+      "cookTime": "10 minutes",
+      "image": "https://hetalsgourmetcafe.files.wordpress.com/2015/04/dsc_0496.jpg",
+      "ingredients": "2 fresh paan leaves• 4 cardamom• 1 spoon gulkand• 45ml vodka• 15ml sambuca• 1 maraschino cherry",
+      "direction": "Muddle the paan leaf, gulkand and cardamom in a cocktail shaker. Add vodka and sambuca to this concoction. Add ice and shake well. Fine strain this into a glass filled with ice and paan leaves. Garnish with cardamom and cherry.",
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "title": "SPICED WINE",
+      "cookTime": "10 minutes",
+      "image": "https://s.aolcdn.com/dims-shared/dims3/GLOB/crop/1800x1200+0+0/resize/590x393!/format/jpg/quality/85/https://s.aolcdn.com/hss/storage/midas/4041f19360e8c5f1b9b1ba0f9fba264f/204518229/sPICED+WINE.jpg",
+      "ingredients": "1 bottle red wine• 60gm demerara sugar• 1 cinnamon stick• A pinch of grated nutmeg• 8 cloves• 2 big black cardamom• 1 orange, sliced into half •1 dried bay leaf• 60ml sloe or damson gin (optional)",
+      "direction": "Put the wine in a saucepan with the orange, sugar, bay leaf and the spices. Heat gently until the sugar has dissolved. Taste to see if you want the wine sweeter. Once you've taken the wine off the heat, stir in the sloe or damson gin if you are using it. Strain into heatproof glasses and serve immediately.",
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "title": "Spiced Moscow Mule",
+      "cookTime": "12-15 inutes",
+      "image": "https://static1.squarespace.com/static/5370ec08e4b0f6c6b67e1b7a/t/58c03c61a5790a1ebbb33fe9/1488993379614/Skinny+Mule.jpg",
+      "ingredients": "60ml vodka• 20ml lime juice• 20ml home made ginger syrup (here's how to make it) •Ginger beer Spices of your choice",
+      "direction": "Combine all the ingredients and mix. Top with ginger beer and garnish with fragrant spices.",
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "title": "SMOKEY ORANGE JAM",
+      "cookTime": "12 min",
+      "image": "https://www.seriouseats.com/images/2016/03/20160312-gin-cocktails-recipes-roundup-16.jpg",
+      "ingredients": "1 freshly grilled orange• A couple of freshly chopped strawberries• Black pepper• Tequila Whiskey (Tennessee has been used for this recipe)• Marmalade",
+      "direction": "In a bar shaker, muddle the strawberries and grilled orange. Top with ice, add the tequila, whiskey and marmalade. Cover and shake till the shaker has a frosted look around it (approximately 30-40 seconds). Strain and serve in a martini glass. Garnish with a bit of the grilled orange and a pinch of black pepper.",
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "title": "Sugarcane Mojito",
+      "cookTime": "12 min",
+      "image": "https://im.indiatimes.in/content/2016/Sep/desi-cocktail_sugarcane-mojito_the-acacia-hotel-_-spa-goa_fb_1473234328.jpg",
+      "ingredients": "5 Oz Suger Cane Juice • 2 oz Vodka • salt and black pepper",
+      "direction": "This healthy concoction has great benefits and is the perfect way to cool off in the summer. It is made by mixing good old ganne ka juice with vodka. You could add some chaat masala and cumin powder for a greater depth of flavor as well. Top it off with strips of sugarcane soaked in vodka and mint leaves to lend your palate a refreshing taste. Don't forget to chew on the sugarcane sticks once you are done sipping this great cocktail.",
+      "userId": 1,
+      "id": 8
     }
   ]
 }

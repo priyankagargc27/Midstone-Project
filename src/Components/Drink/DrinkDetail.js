@@ -3,10 +3,10 @@ import StarRatingComponent from 'react-star-rating-component';
 import {Button} from 'reactstrap';
 import APIManager from "../../Module/APIManager";
 import AddReview from "../Review/AddReview"
-import "./Dessert.css"
+import "./Drink.css"
 
 import Review from "../Review/Review"
-export default class DessertDetail extends Component {
+export default class DrinkDetail extends Component {
 
     constructor() {
         super();
@@ -39,22 +39,22 @@ export default class DessertDetail extends Component {
     render() {
         // const { goBack } = this.props.navigation;
         const { rating } = this.state;
-        const dessert = this.props.desserts.find(r => r.id === parseInt(this.props.match.params.dessertId)) || {}
-        console.log(dessert)
+        const drink = this.props.drinks.find(r => r.id === parseInt(this.props.match.params.drinkId)) || {}
+        console.log(drink)
         return (
-            <section className="dessert-detail">
-                <div key={dessert.id} className="card">
+            <section className="drink-detail">
+                <div key={drink.id} className="card">
                     <div className="card-detail">
                         <h4 className="card-title">
-                            <img top width="30%" src={dessert.image} className="dessert-image" />
+                            <img top width="30%" src={drink.image} className="drink-image" />
                             <br />
-                            {dessert.title}
+                            {drink.title}
                         </h4>
                         <ul className="ingredientList">
 
                             {
-                                dessert.ingredients.split("•").map(ingredient =>{
-                                    return  <li key={ingredient} className="dessert-ingredients">
+                                drink.ingredients.split("•").map(ingredient =>{
+                                    return  <li key={ingredient} className="drink-ingredients">
                                         {ingredient}
                                     </li>
 
@@ -63,13 +63,13 @@ export default class DessertDetail extends Component {
 
 
                         </ul>
-                        <p className="card-direction">{dessert.direction}</p>
+                        <p className="card-direction">{drink.direction}</p>
                             <a href="#"
-                                onClick={() => this.props.deleteDessert(dessert.id)
-                                    .then(() => this.props.history.push("/desserts"))}
+                                onClick={() => this.props.deleteDrink(drink.id)
+                                    .then(() => this.props.history.push("/drinks"))}
                                 className="card-link">Delete</a>
                         <div>
-                            <h5>Dessert Rating: {rating}</h5>
+                            <h5>Drink Rating: {rating}</h5>
                             <StarRatingComponent
                                 name="rate1"
                                 starCount={5}

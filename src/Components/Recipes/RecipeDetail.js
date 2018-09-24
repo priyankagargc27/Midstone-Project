@@ -24,16 +24,19 @@ export default class RecipeDetail extends Component {
     
     onStarClick(nextValue, prevValue, name) {
         this.setState({ rating: nextValue });
+       
         
         let id =  parseInt(this.props.match.params.recipeId)
         console.log(id)
         let body = {rating: nextValue}  //sets body to updated rating
-        APIManager.rating(id, body)
+        APIManager.postrating(id, body)
         .then(() => {r=>r.json()
             console.log("rating added")
+            // const localRating = APIManager.getOneRecipe('rating')
         })        
         
     }
+
    
 
     
@@ -47,7 +50,7 @@ export default class RecipeDetail extends Component {
         return (
             <section className="recipe-detail">
                 <div key={recipe.id} className="card">
-                    <div className="card-body">
+                    <div className="card-detail">
                         <h4 className="card-title">
                             <img top width="30%" src={recipe.image} className="recipe-image" />
                             <br />
@@ -76,7 +79,7 @@ export default class RecipeDetail extends Component {
                             <StarRatingComponent
                                 name="rate1"
                                 starCount={5}
-                                value={rating}
+                                value={this.state.rating}
                                 onStarClick={this.onStarClick.bind(this)}
                             />
                         </div>
