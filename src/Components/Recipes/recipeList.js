@@ -59,6 +59,30 @@ export default class RecipeList extends Component {
         }
     }
     //pulls recipes from database and updates state
+    addToFav = (recipeId, userId) => {
+        let currentUser = JSON.parse(localStorage.getItem("userInfo"));
+        if (currentUser === null) {
+            currentUser = JSON.parse(sessionStorage.getItem("userInfo"));
+            userId = currentUser.userId
+        } else {
+            userId = currentUser.userId
+        }
+            fetch("http://localhost:5002/favorites", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    userId: userId,
+                    recipeId: +recipeId,
+                    review: '',
+                    rating: 0
+                })
+            }).then(() => {
+                    
+                alert("Added to your favorites")
+            })
+    }
 
 
 
@@ -101,7 +125,7 @@ export default class RecipeList extends Component {
                             {
                                 this.props.recipes.map(recipe =>
                                     <RecipeCard key={recipe.id}
-                                        recipe={recipe} {...this.props} />
+                                        recipe={recipe}addToFav={this.addToFav} {...this.props} />
                                 )
                             }
                         </div>

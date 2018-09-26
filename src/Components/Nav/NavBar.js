@@ -37,6 +37,9 @@ logoutFunction = ()=>
                     <li className="nav-item">
                     <Link className="nav-link" to="/desserts">Dessert</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/Favorites">Favorites</Link>
+                    </li>
                     
                     <li className ="nav-item">
                     <NavLink href="#" onClick={this.logoutFunction} id="logout" >Logout</NavLink>

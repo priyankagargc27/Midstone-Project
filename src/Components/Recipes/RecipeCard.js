@@ -39,6 +39,7 @@ export default class RecipeCard extends Component {
 
 
     }
+    
 
     render() {
 
@@ -48,10 +49,13 @@ export default class RecipeCard extends Component {
                 {/* <Card > */}
                 <div  className="recipeCard-body">
                     {/* <div className="recipe-card"> */}
-                        <img top width="30%" src={this.props.recipe.image} className="recipe--image" />
                         <br />
                         {/* <div class="container"> */}
-                            <Link className="rec-link" to={`/recipes/${this.props.recipe.id}`}>{this.props.recipe.title}</Link>
+                            <Link className="rec-link" to={`/recipes/${this.props.recipe.id}`}>
+                        <img top width="30%" src={this.props.recipe.image} className="recipe--image" />
+                            
+                            {this.props.recipe.title}</Link>
+                            <Button  onClick={() => this.props.addToFav((this.props.recipe.id),(this.props.userId))}>Add to Favorite</Button>
 
 
 

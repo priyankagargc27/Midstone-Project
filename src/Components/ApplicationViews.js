@@ -7,6 +7,8 @@ import Home from './Home'
 import RecipeForm from "./Recipes/RecipeForm"
 import RecipeList from "./Recipes/RecipeList"
 import RecipeDetail from './Recipes/RecipeDetail'
+ import Favorites from './Favorites/FavoriteList'
+
 import DessertForm from "./Dessert/DessertForm"
 import DessertList from "./Dessert/DessertList"
 import DessertDetail from './Dessert/DessertDetail'
@@ -46,7 +48,8 @@ export default class ApplicationViews extends Component {
         profiles: [],
         reviews: [],
         desserts: [],
-        drinks:[]
+        drinks:[],
+        favorites:[]
         // events:[],
         // messages:[]
 
@@ -247,7 +250,13 @@ export default class ApplicationViews extends Component {
                         drinks={this.state.drinks} />
                 }} />
 
-
+ <Route exact path='/Favorites' render={props => {
+                    if (this.isAuthenticated()) {
+                       return <Favorites/>
+                     } else {
+                         return <Login/>
+                     }
+                 }}/>
 
                
 

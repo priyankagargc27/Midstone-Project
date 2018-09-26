@@ -47,7 +47,7 @@ export default class AddReview extends Component {
                 userId: JSON.parse(sessionStorage.getItem("userInfo")).userId,
                // userId: JSON.parse(localStorage.getItem("userInfo")).userId,
 
-                //recipeId: parseInt(this.props.match.params.recipeId,10)
+                // recipeId: parseInt(this.props.match.params.recipeId)
                 
                 
 

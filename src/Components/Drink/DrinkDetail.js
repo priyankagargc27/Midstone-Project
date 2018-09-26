@@ -25,6 +25,8 @@ export default class DrinkDetail extends Component {
         let id =  parseInt(this.props.match.params.dessertId)
         console.log(id)
         let body = {rating: nextValue}  //sets body to updated rating
+        //APIHandler.rateRecipe(this.props.favorite.id, body) //patches rating onto favorite recipe
+
         APIManager.postrating(id, body)
         .then(() => {r=>r.json()
             console.log("rating added")

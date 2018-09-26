@@ -26,11 +26,11 @@
 }
 .profile-des{
     
-    margin-left:230px;
+    margin-left:10px;
 }
-/* .profile-pic{
+.profile-pic{
     
     height: auto;
-    width:100%;
+    width:200%;
     overflow: hidden;
-} */
+}

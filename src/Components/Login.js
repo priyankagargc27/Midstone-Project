@@ -58,7 +58,7 @@ export default class Login extends Component {
     render() {
       return (
 
-
+<div className="login-page">
          
           <div className="forms">
             <div className="loginForm">
@@ -99,6 +99,7 @@ export default class Login extends Component {
                 
                 </div>
             </form>
+            </div>
             </div>
             </div>
             
