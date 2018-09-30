@@ -46,10 +46,14 @@ export default class DessertDetail extends Component {
                 <div key={dessert.id} className="card">
                     <div className="card-detail">
                         <h4 className="card-title">
+                        <h2 className="drink-title">  {dessert.title}</h2>
+
                             <img top width="30%" src={dessert.image} className="dessert-image" />
                             <br />
                             {dessert.title}
                         </h4>
+                        <h2 className="direction"> Direction: </h2>
+
                         <ul className="ingredientList">
 
                             {
@@ -63,6 +67,8 @@ export default class DessertDetail extends Component {
 
 
                         </ul>
+                        <h2 className="direction"> Direction: </h2>
+
                         <p className="card-direction">{dessert.direction}</p>
                             <a href="#"
                                 onClick={() => this.props.deleteDessert(dessert.id)

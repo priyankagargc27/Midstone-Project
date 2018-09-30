@@ -44,17 +44,20 @@ export default class DrinkCard extends Component {
 
         return (
             <React.Fragment>
-                    <div className="card-body">
+                <div className="card-body">
+                    {/* <img width="30%" src={this.props.drink.image} className="drink--image" /> */}
+                    <br />
+                    {/* <div class="container"> */}
+                    <Link className="dri-link" to={`/drinks/${this.props.drink.id}`}>
+                        {this.props.drink.title}
                         <img width="30%" src={this.props.drink.image} className="drink--image" />
-                        <br />
-                        {/* <div class="container"> */}
-                            <Link className="dri-link" to={`/drinks/${this.props.drink.id}`}>{this.props.drink.title}</Link>
+                        </Link>
 
 
 
 
-                        {/* </div> */}
-                    </div>
+                    {/* </div> */}
+                </div>
             </React.Fragment>
 
 

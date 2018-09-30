@@ -48,10 +48,11 @@ export default class DrinkDetail extends Component {
                 <div key={drink.id} className="card">
                     <div className="card-detail">
                         <h4 className="card-title">
+                             <h2 className="drink-title">  {drink.title}</h2>
                             <img top width="30%" src={drink.image} className="drink-image" />
                             <br />
-                            {drink.title}
                         </h4>
+                                <h2 className="ingredients">Ingredients:</h2>
                         <ul className="ingredientList">
 
                             {
@@ -65,6 +66,7 @@ export default class DrinkDetail extends Component {
 
 
                         </ul>
+                        <h2 className="direction"> Direction: </h2>
                         <p className="card-direction">{drink.direction}</p>
                             <a href="#"
                                 onClick={() => this.props.deleteDrink(drink.id)
@@ -107,10 +109,11 @@ export default class DrinkDetail extends Component {
                     
                 
                 </section>
+                    </div>
+                    
                 
                             
 
-                    </div>
                 </div>
             </section>
         )

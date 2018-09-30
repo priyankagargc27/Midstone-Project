@@ -162,6 +162,15 @@
       "direction": "Sprinkle yeast over warm water in a small bowl. The water should be no more than 100 degrees F (40 degrees C). Let stand for 5 minutes until yeast softens and begins to form a creamy foam. Sift flour, sugar, 1 tablespoon oregano, and 1 teaspoon salt into a large bowl. Mix egg and oil into dry ingredients; stir in yeast mixture. When dough has pulled together, turn out onto a lightly floured surface and knead until smooth and elastic, about 8 minutes. Lightly oil a large bowl, then place dough in bowl and turn to coat with oil. Cover with a light cloth and let rise in a warm place (80 to 95 degrees F (27 to 35 degrees C)) until doubled in volume, about 1 hour. Preheat oven to 450 degrees F (235 degrees C). Lightly grease a baking sheet. Cook and stir diced tomatoes, tomato paste, onion, 1 tablespoon oregano, garlic, onion powder, 1 teaspoon salt, and pepper in a saucepan over medium heat. Cook until sauce has thickened, 15 to 20 minutes. Punch down dough and turn it out onto a lightly floured surface. Use a knife to divide dough into two equal pieces--do not tear. Shape dough into rounds and let rest for 10 minutes. Form dough into rectangles, and place onto prepared baking sheet. Spoon tomato sauce over dough. Sprinkle with 1 1/4 cup mozzarella cheese; top with bell pepper, onion, and mushroom. Sprinkle 1/4 cup mozzarella cheese over top. Bake in preheated oven until crust is browned and crisp and cheese has melted, 20 to 25 minutes.",
       "userId": 1,
       "id": 12
+    },
+    {
+      "title": "Spicy Potato Curry",
+      "cookTime": "30-35 minutes",
+      "image": "http://omgies.com/wp-content/uploads/2016/01/image-fa43228aa7323de3dd7cf05d8ea1b6389d4affad669a8a8f69a900fe542f93b4-V.jpg",
+      "ingredients": "2 Cup potatoes (boiled and roughly mashed) •2 Tbsp oil (canola or vegetable) •1 tsp ginger paste• 1 Tbsp coarsely ground coriander (dhania)• 2 tsp coarsely ground fennel seeds (saunf)• 1/2 tsp red chili powder• 1 1/2 tsp salt• 1 tsp mango powder (amchoor) 1 Tbsp ginger (thinly sliced) 1 Tbsp green chili ",
+      "direction": "Heat the oil in a saucepan over medium heat. Add ginger paste, coriander, fennel seeds, and red chili powder, stir for about 1 minute Add potatoes and salt mix with spices, lower the heat to low medium, let it cook for about 3 minutes stirring occasionally. Add about 1-1/2 cups of water and mango powder stir and change the heat to medium high. As potatoes come to boil cover the pan and lower the heat to medium low and let it cook for about 4-5 minutes. Adjust the water in gravy to your liking; gravy will thicken as it will cool. Turn off the heat and add sliced ginger and green chilies and cover the pan.",
+      "userId": 1,
+      "id": 13
     }
   ],
   "desserts": [
@@ -331,27 +340,6 @@
   ],
   "favorites": [
     {
-      "userId": 1,
-      "recipeId": 6,
-      "review": "",
-      "rating": 0,
-      "id": 1
-    },
-    {
-      "userId": 1,
-      "recipeId": 10,
-      "review": "",
-      "rating": 0,
-      "id": 2
-    },
-    {
-      "userId": 1,
-      "recipeId": 7,
-      "review": "",
-      "rating": 0,
-      "id": 3
-    },
-    {
       "userId": 11,
       "recipeId": 8,
       "review": "",
@@ -364,6 +352,69 @@
       "review": "",
       "rating": 0,
       "id": 5
+    },
+    {
+      "userId": 10,
+      "recipeId": 10,
+      "review": "",
+      "rating": 0,
+      "id": 7
+    },
+    {
+      "userId": 10,
+      "recipeId": 11,
+      "review": "",
+      "rating": 0,
+      "id": 8
+    },
+    {
+      "userId": 10,
+      "recipeId": 5,
+      "review": "",
+      "rating": 0,
+      "id": 9
+    },
+    {
+      "userId": 10,
+      "recipeId": 8,
+      "review": "",
+      "rating": 0,
+      "id": 10
+    },
+    {
+      "userId": 10,
+      "recipeId": 5,
+      "review": "",
+      "rating": 0,
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "recipeId": 10,
+      "review": "",
+      "rating": 0,
+      "id": 22
+    },
+    {
+      "userId": 1,
+      "recipeId": 6,
+      "review": "",
+      "rating": 0,
+      "id": 28
+    },
+    {
+      "userId": 1,
+      "recipeId": 6,
+      "review": "",
+      "rating": 0,
+      "id": 33
+    },
+    {
+      "userId": 1,
+      "recipeId": 10,
+      "review": "",
+      "rating": 0,
+      "id": 34
     }
   ]
 }

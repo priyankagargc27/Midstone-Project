@@ -19,6 +19,7 @@
     "react-scripts": "1.1.5",
     "react-search": "^2.0.5",
     "react-star-rating-component": "^1.4.1",
+    "react-switch": "^3.0.4",
     "reactstrap": "^6.4.0"
   },
   "scripts": {

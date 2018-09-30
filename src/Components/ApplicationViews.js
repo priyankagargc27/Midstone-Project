@@ -7,8 +7,10 @@ import Home from './Home'
 import RecipeForm from "./Recipes/RecipeForm"
 import RecipeList from "./Recipes/RecipeList"
 import RecipeDetail from './Recipes/RecipeDetail'
- import Favorites from './Favorites/FavoriteList'
+import RecipeCard from './Recipes/RecipeCard'
 
+ import Favorites from './Favorites/FavoriteList'
+import FavoriteDetail from './Favorites/FavotiteDetail'
 import DessertForm from "./Dessert/DessertForm"
 import DessertList from "./Dessert/DessertList"
 import DessertDetail from './Dessert/DessertDetail'
@@ -49,11 +51,14 @@ export default class ApplicationViews extends Component {
         reviews: [],
         desserts: [],
         drinks:[],
-        favorites:[]
+        // favorites:[]
         // events:[],
         // messages:[]
 
     }
+
+    
+   
 
     componentDidMount() {
 
@@ -87,7 +92,8 @@ export default class ApplicationViews extends Component {
                     drinks: allDrink
                 })
             })
-
+            
+           
     }
 
 
@@ -178,7 +184,9 @@ export default class ApplicationViews extends Component {
                     if (this.isAuthenticated()) {
                         return <RecipeList {...props}
 
+                        deleteRecipe={this.deleteRecipe}
                             recipes={this.state.recipes}
+
 
                         />
                     } else {
@@ -190,6 +198,9 @@ export default class ApplicationViews extends Component {
                     return <RecipeForm {...props}
                         addRecipe={this.addRecipe} />
                 }} />
+                                
+                               
+
 
                 <Route path="/recipes/:recipeId(\d+)" render={(props) => {
                     return <RecipeDetail {...props}
@@ -252,11 +263,19 @@ export default class ApplicationViews extends Component {
 
  <Route exact path='/Favorites' render={props => {
                     if (this.isAuthenticated()) {
-                       return <Favorites/>
+                       return <Favorites{...props}
+                       />
                      } else {
                          return <Login/>
                      }
                  }}/>
+                  {/* <Route path="/favorites/:favoriteId(\d+)" render={(props) => {
+                    return <FavoriteDetail {...props}
+                        addReview={this.addReview}
+                        reviews={this.state.reviews}
+                        deleteRecipe={this.deleteRecipe}
+                        recipes={this.state.recipes} />
+                }} /> */}
 
                
 

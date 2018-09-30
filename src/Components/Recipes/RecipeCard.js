@@ -5,6 +5,9 @@ import {
     Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button
 } from 'reactstrap';
+import APIManager from "../../Module/APIManager";
+
+
 import "./Recipe.css"
 
 
@@ -39,7 +42,7 @@ export default class RecipeCard extends Component {
 
 
     }
-    
+
 
     render() {
 
@@ -47,23 +50,33 @@ export default class RecipeCard extends Component {
             <React.Fragment>
                 {/* <div className="row"> */}
                 {/* <Card > */}
-                <div  className="recipeCard-body">
+                <div className="recipeCard-body">
                     {/* <div className="recipe-card"> */}
-                        <br />
-                        {/* <div class="container"> */}
-                            <Link className="rec-link" to={`/recipes/${this.props.recipe.id}`}>
+                    <br />
+                    {/* <div class="container"> */}
+                    <Link className="rec-link" to={`/recipes/${this.props.recipe.id}`}>
+                        {this.props.recipe.title}
                         <img top width="30%" src={this.props.recipe.image} className="recipe--image" />
-                            
-                            {this.props.recipe.title}</Link>
-                            <Button  onClick={() => this.props.addToFav((this.props.recipe.id),(this.props.userId))}>Add to Favorite</Button>
+
+                    </Link>
+                    <a href="#"
+                        onClick={() => {
+                            if (window.confirm('Are you sure you want to delete this item?'))
+                                this.props.deleteRecipe(this.props.recipe.id)
+                                    .then(() => this.props.history.push("/recipes"))
+                        }}
+                        className="card-delete"></a>
+
+
+
+                    <a className="fav-rec" href="#" onClick={() => this.props.addToFav((this.props.recipe.id), (this.props.userId))}></a>
 
 
 
 
 
 
-
-                        {/* </div> */}
+                    {/* </div> */}
                     {/* </div> */}
                 </div>
                 {/* </Card> */}

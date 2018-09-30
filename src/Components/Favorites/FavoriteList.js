@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import FavoriteCard from './FavoriteCard'
 import APIManager from '../../Module/APIManager';
+import RecipeCard from "../Recipes/RecipeCard"
+
 import "./Favorite.css"
 
 
@@ -33,9 +35,11 @@ export default class FavoriteList extends Component {
       return APIManager.getAllData(`favorites?userId=${sessionUser.userId}&_expand=recipe`)
    
       .then(userFavorites => {
+          console.log("hello")
           console.log(userFavorites)
           this.setState({ 
               favorites: userFavorites
+              
           })
       })
 
@@ -45,7 +49,7 @@ export default class FavoriteList extends Component {
       .then(userFavorites => {
           this.setState({ 
               favorites: userFavorites
-          })
+            })
       })
     }
   };
@@ -80,6 +84,7 @@ export default class FavoriteList extends Component {
 
 
     componentDidMount() {
+        console.log("component mounted")
         this.getUserFavorites()       
     }
 
@@ -87,13 +92,22 @@ export default class FavoriteList extends Component {
         
         return (
             <React.Fragment>
-                <div className="favDiv">
-            <h3 className="favheader">View thw full list of favorite recipes</h3>
-                <div className="favlist">
+                {/* <div className="favDiv"> */}
+            <h3 className="favheader">View the full list of favorite recipes</h3>
+                {/* <div className="favlist"> */}
                 {
+                //      <div>
+
+                //      {
+                //          this.props.recipes.map(recipe =>
+                //              <RecipeCard key={recipe.id}
+                //                  recipe={recipe}addToFav={this.addToFav} {...this.props} />
+                //          )
+                //      }
+                
                     this.state.favorites.map(favorite => 
                     < FavoriteCard key={favorite.id} 
-                    favorite={favorite} 
+                    favorite={favorite}
                     deleteFromFav={this.deleteFromFav}
                     // handleReview ={this.handleReview}
                     // toggleReview= {this.toggleReview}
@@ -101,8 +115,8 @@ export default class FavoriteList extends Component {
                     />
                     )
                 }
-                </div>
-                </div>
+                {/* </div> */}
+                {/* </div> */}
             </React.Fragment>
         )
     }

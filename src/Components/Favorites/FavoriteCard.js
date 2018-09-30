@@ -31,9 +31,20 @@ export default class FavoriteCard extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Card className="FavCard" isDisplay="inline-flex">
+                 <div  className="recipeCard-body">
+                        <br />
+                        {/* <h1>hi</h1> */}
+                            <Link className="rec-link" to={`/recipes/${this.props.favorite.recipe.id}`}>
+                            {this.props.favorite.recipe.title}
+                        <img top width="30%" src={this.props.favorite.recipe.image} className="recipe--image" />
+                            
+                            </Link>
+                            <a href="#" isColor="danger" onClick={() => this.props.deleteFromFav(this.props.favorite.id)}>Delete</a>
+
+                {/* <Card className="FavCard" isDisplay="inline-flex">
 
                     <CardImage>
+                        <h2> favorite card</h2>
                         <img className="recipeImage" top width="30%" src={this.props.favorite.recipe.image} />
                     </CardImage>
 
@@ -70,9 +81,10 @@ export default class FavoriteCard extends React.Component {
                         />
                     </CardContent>
                     <Button isColor="danger" onClick={() => this.props.deleteFromFav(this.props.favorite.id)}>Delete</Button>
-                </Card>
+                </Card> */}
                 {/* <Reviews toggleReview={this.props.toggleReview} handleReview={this.props.handleReview} favoriteReview={this.props.favorite.review}/>
             <AddReview toggleReview={this.props.toggleReview}visible={this.props.visible} favoriteReview={this.props.favorite.review} favoriteId={this.props.favorite.id} handleReview={this.props.handleReview}/> */}
+           </div>
             </React.Fragment>
         )
     }

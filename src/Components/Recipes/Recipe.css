@@ -67,12 +67,12 @@
 }
 
 .rec-link{
-    font-size: 20px;
-    color:orangered;
+    font-size: 19px;
+    color:rgb(230, 215, 210);
     margin-bottom: 234px;
     /* position: absolute; */
-bottom: -120px;
-text-align: center;
+/* bottom: -120px; */
+/* text-align: center; */
 }
 .recipe-detail{
     margin-top:30px;
@@ -126,3 +126,39 @@ text-align: center;
             width: 270px;
         }
     
+        .fav-rec
+        {
+            font-size:19px;
+        }
+        .card-delete {
+            
+            
+                background-image: url(http://cdn.onlinewebfonts.com/svg/img_377999.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 24px 24px;
+                height: 45px;
+                border-radius: 10px;
+                display: inline-block;
+                padding: 11px 24px 10px;
+                text-decoration: none;
+                margin-left:1px;
+            }
+           
+            .fav-rec{
+                background-image: url(https://clipart.info/images/ccovers/1484588002heart-png-free.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 24px 24px;
+                height: 45px;
+                border-radius: 10px;
+                display: inline-block;
+                padding: 11px 24px 10px;
+                text-decoration: none;
+                margin-left:127px;
+
+            }
+
+           
+        
+        

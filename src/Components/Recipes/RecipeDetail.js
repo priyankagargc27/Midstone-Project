@@ -52,10 +52,14 @@ export default class RecipeDetail extends Component {
                 <div key={recipe.id} className="card">
                     <div className="card-detail">
                         <h4 className="card-title">
+                        <h2 className="drink-title">  {recipe.title}</h2>
+
                             <img top width="30%" src={recipe.image} className="recipe-image" />
                             <br />
                             {recipe.title}
                         </h4>
+                        <h2 className="ingredients">Ingredients:</h2>
+
                         <ul className="ingredientList">
 
                             {
@@ -69,11 +73,10 @@ export default class RecipeDetail extends Component {
 
 
                         </ul>
+                        <h2 className="direction"> Direction: </h2>
+
                         <p className="card-direction">{recipe.direction}</p>
-                            <a href="#"
-                                onClick={() => this.props.deleteRecipe(recipe.id)
-                                    .then(() => this.props.history.push("/recipes"))}
-                                className="card-link">Delete</a>
+                            
                         <div>
                             <h5>Recipe Rating: {rating}</h5>
                             <StarRatingComponent

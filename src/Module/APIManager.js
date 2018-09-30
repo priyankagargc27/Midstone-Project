@@ -76,5 +76,10 @@ reviewRecipe:{
         body: JSON.stringify(body)
     });
 }
+},
+getAllFav: {
+    value: function (object) {
+        return fetch(`${remoteURL}/${object}`).then(e => e.json())
+    }
 }
 })

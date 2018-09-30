@@ -58,6 +58,32 @@ export default class DrinkList extends Component {
 
         }
     }
+
+    // add your drinks to favorite
+    addToFav = (recipeId, userId) => {
+        let currentUser = JSON.parse(localStorage.getItem("userInfo"));
+        if (currentUser === null) {
+            currentUser = JSON.parse(sessionStorage.getItem("userInfo"));
+            userId = currentUser.userId
+        } else {
+            userId = currentUser.userId
+        }
+            fetch("http://localhost:5002/favorites", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    userId: userId,
+                    recipeId: +recipeId,
+                    review: '',
+                    rating: 0
+                })
+            }).then(() => {
+                    
+                alert("Recipe added to your favorites")
+            })
+    }
     //pulls recipes from database and updates state
 
 
@@ -112,7 +138,7 @@ export default class DrinkList extends Component {
                             {
                                 this.props.drinks.map(drink =>
                                     <DrinkCard key={drink.id}
-                                    drink={drink} {...this.props} />
+                                    drink={drink}{...this.props} />
                                 )
                             }
                         </div>

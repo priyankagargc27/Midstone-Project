@@ -80,8 +80,10 @@ export default class RecipeList extends Component {
                 })
             }).then(() => {
                     
-                alert("Added to your favorites")
+                alert("Recipe added to your favorites")
             })
+           
+           
     }
 
 

@@ -142,3 +142,21 @@ input[type="submit"]:hover{
         padding-right: 2px;
         width: 270px;
     }
+.drink-detail{
+    margin-left:15px;
+    
+}
+
+    .drink-title{
+        font-size:45px;
+        font-weight: bold;
+    }
+   .ingredients
+   {
+    font-size:25px;
+    font-weight: bold;
+   }
+   .direction{
+    font-size:25px;
+    font-weight: bold;
+   }
