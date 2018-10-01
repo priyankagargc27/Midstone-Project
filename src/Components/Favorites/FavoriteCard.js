@@ -12,13 +12,13 @@ export default class FavoriteCard extends React.Component {
     }
     //This handles the click on the star rating
     onStarClick = (nextValue, prevValue, name) => {
+        console.log("hello2")
         this.setState({
             rating: nextValue
         });
         let body = { rating: nextValue }  //sets body to updated rating
         APIManager.postrating(this.props.favorite.id, body) //patches rating onto favorite recipe
     }
-
     componentDidMount() {
         if (this.props.favorite.rating !== null) {
             console.log("rating", this.props.favorite.rating)
@@ -33,7 +33,6 @@ export default class FavoriteCard extends React.Component {
             <React.Fragment>
                  <div  className="recipeCard-body">
                         <br />
-                        {/* <h1>hi</h1> */}
                             <Link className="rec-link" to={`/recipes/${this.props.favorite.recipe.id}`}>
                             {this.props.favorite.recipe.title}
                         <img top width="30%" src={this.props.favorite.recipe.image} className="recipe--image" />

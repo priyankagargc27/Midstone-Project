@@ -52,7 +52,7 @@ export default class DessertDetail extends Component {
                             <br />
                             {dessert.title}
                         </h4>
-                        <h2 className="direction"> Direction: </h2>
+                        <h2 className="direction"> Ingredients: </h2>
 
                         <ul className="ingredientList">
 

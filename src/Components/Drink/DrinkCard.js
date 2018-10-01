@@ -52,6 +52,13 @@ export default class DrinkCard extends Component {
                         {this.props.drink.title}
                         <img width="30%" src={this.props.drink.image} className="drink--image" />
                         </Link>
+                        <a href="#"
+                        onClick={() => {
+                            if (window.confirm('Are you sure you want to delete this item?'))
+                                this.props.deleteDrink(this.props.drink.id)
+                                    .then(() => this.props.history.push("/drinks"))
+                        }}
+                        className="card-delete"></a>
 
 
 

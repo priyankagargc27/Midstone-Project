@@ -60,31 +60,34 @@ export default class DrinkList extends Component {
     }
 
     // add your drinks to favorite
-    addToFav = (recipeId, userId) => {
-        let currentUser = JSON.parse(localStorage.getItem("userInfo"));
-        if (currentUser === null) {
-            currentUser = JSON.parse(sessionStorage.getItem("userInfo"));
-            userId = currentUser.userId
-        } else {
-            userId = currentUser.userId
-        }
-            fetch("http://localhost:5002/favorites", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                    userId: userId,
-                    recipeId: +recipeId,
-                    review: '',
-                    rating: 0
-                })
-            }).then(() => {
+    // addToFav = (recipeId, userId) => {
+    //     let currentUser = JSON.parse(localStorage.getItem("userInfo"));
+    //     if (currentUser === null) {
+    //         currentUser = JSON.parse(sessionStorage.getItem("userInfo"));
+    //         userId = currentUser.userId
+    //     } else {
+    //         userId = currentUser.userId
+    //     }
+    //         fetch("http://localhost:5002/favorites", {
+    //             method: "POST",
+    //             headers: {
+    //                 "Content-Type": "application/json",
+    //             },
+    //             body: JSON.stringify({
+    //                 userId: userId,
+    //                 recipeId: +recipeId,
+    //                 review: '',
+    //                 rating: 0
+    //             })
+    //         }).then(() => {
                     
-                alert("Recipe added to your favorites")
-            })
-    }
-    //pulls recipes from database and updates state
+    //             alert("Recipe added to your favorites")
+    //         })
+    // }
+   
+
+
+
 
 
 
@@ -102,7 +105,7 @@ export default class DrinkList extends Component {
                             id="searchItem"
                             onChange={this.handleSearchField}
                             placeholder="Search for drinks ..." />
-                            <input type="submit" class="search-submit" value="" onClick={this.searchDrinks}/>
+                            <input type="submit" className="search-submit" value="" onClick={this.searchDrinks}/>
                             
                             {/* {this.state.searchItem ==null &&
                             <div>{

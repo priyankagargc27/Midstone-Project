@@ -14,6 +14,7 @@ export default Object.create(null, {
     },
     getAllData: {
         value: function (object) {
+            console.log(`${remoteURL}/${object}`)
             return fetch(`${remoteURL}/${object}`).then(e => e.json())
         }
     },

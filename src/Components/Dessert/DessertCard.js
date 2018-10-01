@@ -45,11 +45,18 @@ export default class DessertCard extends Component {
         return (
             <React.Fragment>
                     <div className="card-body">
-                        <img width="30%" src={this.props.dessert.image} className="dessert--image" />
                         <br />
                         {/* <div class="container"> */}
-                            <Link className="des-link" to={`/desserts/${this.props.dessert.id}`}>{this.props.dessert.title}</Link>
-
+                            <Link className="des-link" to={`/desserts/${this.props.dessert.id}`}>{this.props.dessert.title}
+                            <img width="30%" src={this.props.dessert.image} className="dessert--image" />
+</Link>
+<a href="#"
+                        onClick={() => {
+                            if (window.confirm('Are you sure you want to delete this item?'))
+                                this.props.deleteDessert(this.props.dessert.id)
+                                    .then(() => this.props.history.push("/desserts"))
+                        }}
+                        className="card-delete"></a>
 
 
 

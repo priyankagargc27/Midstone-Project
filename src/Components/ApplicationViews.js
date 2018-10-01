@@ -214,6 +214,8 @@ export default class ApplicationViews extends Component {
                 <Route exact path="/desserts" render={(props) => {
                     if (this.isAuthenticated()) {
                         return <DessertList {...props}
+                        deleteDessert={this.deleteDessert}
+
 
                             desserts={this.state.desserts}
 
@@ -239,6 +241,8 @@ export default class ApplicationViews extends Component {
                  <Route exact path="/drinks" render={(props) => {
                     if (this.isAuthenticated()) {
                         return <DrinkList {...props}
+                        deleteDrink={this.deleteDrink}
+
 
                             drinks={this.state.drinks}
 

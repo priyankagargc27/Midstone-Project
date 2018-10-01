@@ -58,7 +58,6 @@ export default class RecipeList extends Component {
 
         }
     }
-    //pulls recipes from database and updates state
     addToFav = (recipeId, userId) => {
         let currentUser = JSON.parse(localStorage.getItem("userInfo"));
         if (currentUser === null) {
