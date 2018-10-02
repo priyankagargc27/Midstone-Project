@@ -53,6 +53,16 @@ export default class RecipeDetail extends Component {
                     <div className="card-detail">
                         <h4 className="card-title">
                         <h2 className="drink-title">  {recipe.title}</h2>
+                        <div >
+                            {/* <h2 className="rating"> Recipe Rating: {rating}</h2> */}
+                            <StarRatingComponent
+                            className="rating"
+                                name="rate1"
+                                starCount={5}
+                                value={this.state.rating}
+                                onStarClick={this.onStarClick.bind(this)}
+                            />
+                        </div>
 
                             <img top width="30%" src={recipe.image} className="recipe-image" />
                             <br />
@@ -77,33 +87,23 @@ export default class RecipeDetail extends Component {
 
                         <p className="card-direction">{recipe.direction}</p>
                             
-                        <div>
-                            <h5>Recipe Rating: {rating}</h5>
-                            <StarRatingComponent
-                                name="rate1"
-                                starCount={5}
-                                value={this.state.rating}
-                                onStarClick={this.onStarClick.bind(this)}
-                            />
-                        </div>
                            
                         
 
                             <AddReview addReview={this.props.addReview}/>
+                            <h2 className="recentcomments"> Recent Comments </h2>
                             <section className="reviews">
                     {
                         this.props.reviews.map(review =>
-                            //  let currentUser = this.props.users.find(u => u.id === review.userId);
-                            
                             <div key={review.id} className="card">
                                
-                                    <p className="card-title" className="review-name">
+                                    <p className="review-title" >
                                         {review.review}
                                     </p>
 
                                      <time>
                                      <FontAwesomeIcon icon="stroopwafel" />Posted on:{review.time}</time>
-                                    <h6>By: {review.name}</h6>
+                                    <h6 className="review-name">By: {review.name}</h6>
 
 
                         

@@ -1,5 +1,7 @@
 import React, { Component }  from 'react'
 import {Redirect} from 'react-router-dom'
+import "./Review.css"
+
 //import APIManager from "../../Module/APIManager";
 
 export default class AddReview extends Component {
@@ -69,17 +71,23 @@ render() {
        <React.Fragment>
             <form  onSubmit={this.MakeNewReview} >
            <div className="reviewContainer">
+             <div className="commentsandreviews">
              <h5>Comments & Reviews</h5>
+             </div>
           <form className="reviewForm">
              <div className="form-group">
-                <label htmlFor="review">Add a Review</label>
-                <input type="text" required="true"
+                {/* <label htmlFor="review">Add a Review</label> */}
+                <textarea  name="comment" onChange={this.handleFieldChange} 
+                 value={this.state.review}id="review"
+                 placeholder="Write a review"
+                   cols="45" rows="5" maxlength="65525" required="required"></textarea>
+                {/* <input type="text" required="true"
                    className="form-control"
                    onChange={this.handleFieldChange}
                    id="review"
 
                    value={this.state.review}
-                   placeholder="Write a review" />
+                   placeholder="Write a review" /> */}
                     </div>
                     <button type="submit" onClick={this.MakeNewReview} className="btn btn-primary">Submit</button>
 

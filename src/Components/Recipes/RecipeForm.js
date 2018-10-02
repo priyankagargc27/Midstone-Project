@@ -92,16 +92,7 @@ export default class RecipeForm extends Component {
                        onChange={this.handleFieldChange}
                        id="direction"  placeholder="Direction" />
                  </div>
-                 {/* <div className="form-group">
-                    <label htmlFor="employee">Assign to caretaker</label>
-                    <select defaultValue="" name="employee" id="employee"
-                       onChange={this.handleFieldChange}>
-                       <option value="">Select an employee</option>
-                       {
-                          this.props.employees.map(e => <option key={e.id} id={e.id}>{e.name}</option>)
-                       }
-                    </select>
-                 </div> */}
+                
                  <button type="submit" onClick={this.MakeNewRecipe} className="btn btn-primary">Submit</button>
               </form>
               </div>

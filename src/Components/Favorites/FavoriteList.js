@@ -94,17 +94,9 @@ export default class FavoriteList extends Component {
             <React.Fragment>
                 {/* <div className="favDiv"> */}
             <h3 className="favheader">View the full list of favorite recipes</h3>
-                {/* <div className="favlist"> */}
+            <div className="fav-card">
                 {
-                //      <div>
-
-                //      {
-                //          this.props.recipes.map(recipe =>
-                //              <RecipeCard key={recipe.id}
-                //                  recipe={recipe}addToFav={this.addToFav} {...this.props} />
-                //          )
-                //      }
-                
+               
                     this.state.favorites.map(favorite => 
                     < FavoriteCard key={favorite.id} 
                     favorite={favorite}
@@ -115,8 +107,8 @@ export default class FavoriteList extends Component {
                     />
                     )
                 }
-                {/* </div> */}
-                {/* </div> */}
+                </div>
+               
             </React.Fragment>
         )
     }

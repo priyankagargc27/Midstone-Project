@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import APIManager from "../../Module/APIManager";
+import "./Review.css"
+
 //import { Link } from "react-router-dom"
 //import "./Message.css"
 
@@ -10,12 +12,14 @@ export default class Review extends Component {
     render() {
         return (
             <React.Fragment>
-                <section className="reviews">
+                <h2> Recent Comments</h2>
+                {/* <section className="sec-reviews"> */}
+                
                     {
                         this.props.reviews.map(review =>
                             <div key={review.id} className="card">
                                 <div className="card-body">
-                                    <h5 className="card-title" className="review-name">
+                                    <h5 className="review-title">
                                         {review.eview}
                                     </h5>
                                     
@@ -28,8 +32,8 @@ export default class Review extends Component {
                             </div>
                         )
                     }
-                </section>
-                <p></p>
+                {/* </section> */}
+                
                 {/* <div className="reviewButton">
                     <button type="button"
                         className="btn btn-primary"

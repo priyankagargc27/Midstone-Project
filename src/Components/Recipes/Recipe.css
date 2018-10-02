@@ -159,6 +159,23 @@
 
             }
 
-           
-        
+           .rating
+           {
+               font-size:1.6em;
+           }
+           .recentcomments{
+               font-size:35px;
+           }
+           .reviews{
+               margin-top:15px;
+           }
+        .review-title{
+            color:red;
+            font-size:79px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .review-name
+        {
+            font-size: 17px;
+        }
         

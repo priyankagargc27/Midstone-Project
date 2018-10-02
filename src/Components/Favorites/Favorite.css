@@ -3,10 +3,15 @@
 }
 .favheader
 {
-    font-size:23px;
+    font-size:33px;
     color:brown;
+    margin-top:10px;
+    margin-left:430px;
 }
 .favlist
 {
     margin-top:10px;
+}
+.fav-card{
+    margin-top:33px;
 }
