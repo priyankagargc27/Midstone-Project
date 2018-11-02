@@ -1,4 +1,4 @@
-const remoteURL = "https://priyanka-front-end-capstone.herokuapp.com/"
+const remoteURL = "http://localhost:5002"
 
 export default Object.create(null, {
     getUser:{
@@ -9,7 +9,7 @@ export default Object.create(null, {
     
     getOneRecipe: {
         value: function (recipeId) {
-            return fetch(`https://priyanka-front-end-capstone.herokuapp.com//recipes/${recipeId}`).then(e => e.json())
+            return fetch(`http://localhost:5002/recipes/${recipeId}`).then(e => e.json())
         }
     },
     getAllData: {
@@ -58,7 +58,7 @@ export default Object.create(null, {
     postrating:{
     value: function (id, body)  {
         console.log(body)
-      return fetch(`https://priyanka-front-end-capstone.herokuapp.com//recipes/${id}`, {
+      return fetch(`http://localhost:5002/recipes/${id}`, {
           method: "PATCH",
           headers: {
               "Content-Type": "application/json"
@@ -69,7 +69,7 @@ export default Object.create(null, {
 },
 reviewRecipe:{
     value: function( id, body){
-    return fetch(`https://priyanka-front-end-capstone.herokuapp.com//recipes/${id}`, {
+    return fetch(`http://localhost:5002/recipes/${id}`, {
         method: "PATCH",
         headers: {
             "Content-Type": "application/json"
