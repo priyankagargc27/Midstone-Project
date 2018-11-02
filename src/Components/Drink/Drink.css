@@ -79,7 +79,7 @@
     margin: .2em;
     /* padding: 1em; */
     box-shadow: 0 15px 10px -10px rgba(226, 10, 10, 0.575);
-    border-radius: 5px;
+    border-radius: 10px;
     opacity:0.7;
 }
 .drink--image:hover{
@@ -159,4 +159,8 @@ input[type="submit"]:hover{
    .direction{
     font-size:25px;
     font-weight: bold;
+   }
+   .drinkButton{
+    margin-left:545px;
+
    }

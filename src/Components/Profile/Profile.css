@@ -34,3 +34,8 @@
     width:200%;
     overflow: hidden;
 }
+.profile-name{
+    font-size:35px;
+    color:goldenrod;
+    font-style:italic;
+}

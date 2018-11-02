@@ -94,7 +94,7 @@ export default class DessertDetail extends Component {
                             
                             <div key={review.id} className="card">
                                
-                                    <p className="card-title" className="review-name">
+                                    <p className="review-title">
                                         {review.review}
                                     </p>
 

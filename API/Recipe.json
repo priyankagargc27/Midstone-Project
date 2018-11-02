@@ -65,6 +65,24 @@
       "email": "dolly@gmail.com",
       "password": "abc",
       "id": 11
+    },
+    {
+      "name": "",
+      "email": "aa@aa",
+      "password": "aa",
+      "id": 12
+    },
+    {
+      "name": "",
+      "email": "p@p.com",
+      "password": "aa",
+      "id": 13
+    },
+    {
+      "name": "",
+      "email": "p@p.com",
+      "password": "aa",
+      "id": 14
     }
   ],
   "profiles": [
@@ -85,16 +103,6 @@
   ],
   "recipes": [
     {
-      "title": "chesse Gravy",
-      "cookTime": "12-15 inutes",
-      "image": "https://rasoise.files.wordpress.com/2014/05/26.jpg",
-      "ingredients": "• Cheese Cubes - 250 grams. • Curry powder - 1 tablespoon. • Butter - 2 tablespoons. • Tomatoes - 3 numbers. • Red bell pepper - 1 number. • Red chilly - 2 numbers. • Ginger - 1 piece. • Onion (medium size) - 1 number. • Oil - 1 tablespoon. • Cream - 2 tablespoons. • Kasoori methi - ½ tea spoon. • Salt - to taste. • Garlic - 4 cloves.",
-      "direction": "Heat oil in a pan add chopped onions, chopped ginger, and garlic, red chilly, add red bell pepper, tomatoes, kasoori methi, salt, put the lid on and cook this on a slow flame till tomatoes and bell peppers are tender. Let it cool down put this into a blender make a paste. Heat butter in a pan add curry powder, cook this for 4 minutes, add tomato, bell pepper, paste, mix it. Once come to boil add paneer, cream, mix this and cook it for 5 minutes and switch off the flame.",
-      "userId": 1,
-      "id": 5,
-      "rating": 3
-    },
-    {
       "title": "Vegetable Biryani",
       "cookTime": "30-35 minutes",
       "image": "https://1.bp.blogspot.com/-K8NZg6QdHT0/VvgPWYfY0cI/AAAAAAAAV0k/Kl9-BGH1C3sETmQskVm83j3W99JyGodqQ/s1600/Palak%2BVeg%2BBiryani%2B%25283%2529%2B-%2B1.jpg",
@@ -112,7 +120,7 @@
       "direction": "In a bowl, add baby corns, all purpose flour, toss it, add half an egg, mix this well, add corn starch coat with the baby corn and deep fry them. Take a pan add oil heat it, add chopped ginger, garlic, add chopped onions, salt, chopped green chilly, bell peppers(green, yellow, red), red chilly powder, toss it Add bottle green chilly sauce, soya sauce, tomato ketchup, vinegar, MSG (optional), cumin seeds powder (optional), spring onions. Add fried corns, toss them and switch off the flame.",
       "userId": 1,
       "id": 7,
-      "rating": 5
+      "rating": 3
     },
     {
       "title": "Crispy Chestnuts",
@@ -185,21 +193,30 @@
     {
       "title": "Tofu Stir-Fry",
       "cookTime": "30-35 minutes",
-      "image": "http://d2gtpjxvvd720b.cloudfront.net/system/recipe/image/1064/mobile_hg-turbo-tofu-stir-fry.jpg",
+      "image": "https://raster-static.postmates.com/?url=https%3A%2F%2Fd1725r39asqzt3.cloudfront.net%2Fc5a77a53-6f35-4a36-871b-61bad271efad%2Forig.jpg&quality=85&w=640&h=0&mode=auto&format=jpg&v=4",
       "ingredients": "6 tablespoons vegetable oil•2 cloves garlic, chopped•6 tablespoons soy sauce•6 tablespoons rice vinegar•1 tablespoon Thai chili sauce•3 tablespoons honey•8 ounces extra-firm tofu, cut into •1/4-inch cubes•1/2 (16 ounce) package linguine pasta•1 tablespoon sesame oil•8 ounces bean sprouts•8 ounces shredded carrots•1 green bell pepper, thinly sliced•8 green onions, halved lengthwise",
       "direction": "Heat the vegetable oil in a wok over medium-high heat; cook and stir the garlic until lightly browned, about 2 minutes. Pour in the soy sauce, rice vinegar, chili sauce, and honey, stir to mix, and bring the mixture to a simmer. Reduce heat to medium-low, and let the sauce simmer for 10 minutes. Transfer the sauce to a bowl, and stir the tofu into the sauce. Set the tofu mixture aside. Fill a large pot with lightly salted water and bring to a rolling boil over high heat. Once the water is boiling, stir in the linguine, and return to a boil. Cook the pasta uncovered, stirring occasionally, until the pasta has cooked through, but is still firm to the bite, about 11 minutes. Drain well in a colander set in the sink. While the pasta is boiling, heat the sesame oil in clean wok or large skillet; cook and stir the bean sprouts, carrots, green pepper, and green onions until the vegetables are bright in color and slightly wilted, about 5 minutes. Pour in the tofu with sauce and linguine; stir to combine.",
       "userId": 1,
       "id": 15
     },
     {
-      "title": "Cottage Cheese Butter Pepper Fry",
+      "title": "grilled vegetables",
       "cookTime": "30-35 minutes",
-      "image": "http://34c6b8841d4124020671-5bfabe5484726969ac662c6d377e2f3c.r16.cf2.rackcdn.com/uploads/old/SmZxuykRgi.gif",
+      "image": "https://www.bigfattummy.com/wp-content/uploads/2016/11/Paneer-Tikka-Tawa-Se-08-678x381.jpg",
       "ingredients": "Butter - 1 tablespoon. • Green chilly - 4 numbers. • Curry leaves - 2 springs. • Ginger garlic paste - 1 tea spoon. • Salt - to taste. • Garam masala - 1/2 tea spoon. • Turmeric powder - 1/4 tea spoon. • All purpose flour - 1 tablespoon. • Rice flour - 1 tea spoon. • Corn starch - 1 tea spoon. • Paneer - 250 grams. • Coriander powder - 1/2 tea spoon. • Chilly powder - 1 tea spoon. • Pepper powder - 1 tablespoon. • Oil - to fry. • Lime juice - 1 tea spoon. • Coriander leaves(chopped) - 1 tablespoon.",
       "direction": "Take a bowl add corn starch, rice flour, all purpose flour, turmeric powder, garam masala powder, salt, ginger garlic paste, water, make a thick paste. Put the paneer pieces in the paste and coat the masala and deep fry them and keep it aside. Heat a pan add curry leaves, green chilly, butter saute them and add coriander powder, chilly powder, pepper powder, salt and add fried paneer pieces toss it and sprinkle lime juice, coriander chopped and toss it.   ",
       "userId": 1,
       "id": 16,
       "rating": 4
+    },
+    {
+      "title": "chesse Gravy",
+      "cookTime": "30-35 minutes",
+      "image": "https://i.ytimg.com/vi/-BF5H9-Xoh0/maxresdefault.jpg",
+      "ingredients": "• Msg (optional) - 1 pinch. • Vinegar - 1 tea spoon. • Tomato ketchup - 1 tablespoon. • Soya sauce - 1 tablespoon. • Green chilly sauce - 1 tea spoon. • Onion chopped - 1 number. • Garlic(chopped) - 4 clove. • Ginger(chopped) - 1 piece. • Oil - to fry. • Corn starch - 1/2 cup. • All purpose flour - 2 tablespoons. • Baby corns - 300 grams. • Cumin powder - 1/2 tea spoon. • Spring onions (chopped) - 2 tablespoons. • Salt - to taste. • Green chillies (chopped) - 3 numbers. • Bell peppers (green, yellow, red colours) - 1 cup. • Red chilly powder - 1 tablespoon. • Egg - 1 number",
+      "direction": "In a bowl add onions, Cumin seeds, cilantro, redchilli powder, salt, garam masala powder along with eggs. Whisk the mixture well. Transfer the mixture to another container steam it. It can be steamed in oven or the steamer. Cut the steamed eggs into cubes .These cubes can be used in any kind of curry. For Milk sauce curry :-  Take a pan add oil in it. Add mustard seeds allow it to crackle then add cumin seeds , onions, salt, turmeric, ginger garlic paste, raw pista powder saute well. Add milk to the mixture bring it to a boil.Then add coriander powder, chilli powder, mix well. Reduce the heat add tomato puree at once to avoid curdling of milk. Add salt ,coriander leaves cook the sauce further. Add egg cubes at this point cook for 2 minutes.",
+      "userId": 10,
+      "id": 17
     }
   ],
   "desserts": [
@@ -215,7 +232,7 @@
     {
       "title": "Cashew Cubes",
       "cookTime": "25 mins",
-      "image": "https://4.imimg.com/data4/UV/HC/MY-9014222/kaju-barfi-sweets-500x500.jpg",
+      "image": "https://www.chezshuchi.com/images/kajubarfi_9.JPG",
       "ingredients": "• Cashew nuts/kaju - 250 grams. • Ground sugar - 100 grams. • Water - 25 ml.",
       "direction": "Grind cashew nuts, and sugar separately. Make a syrup with sugar and water, boiling only once. Add cashew nuts on low heat. Mix well. Remove from heat onto a smooth surface and roll out (thin) quickly with a rolling pin. At last, cut into squares/diamond shapes and serve it.",
       "userId": 1,
@@ -292,13 +309,6 @@
       "name": "Priyanka",
       "userId": 1,
       "id": 1
-    },
-    {
-      "review": "Post some more recipes",
-      "time": "10/1/2018, 7:56:17 PM",
-      "name": "Priyanka",
-      "userId": 1,
-      "id": 2
     }
   ],
   "drinks": [
@@ -332,7 +342,7 @@
     {
       "title": "fresh Betel Cocktail",
       "cookTime": "10 minutes",
-      "image": "https://hetalsgourmetcafe.files.wordpress.com/2015/04/dsc_0496.jpg",
+      "image": "http://2.bp.blogspot.com/-RUisxyq4WvE/VRAlh0qxddI/AAAAAAAAZa8/Kig2ye5fMx8/s1600/SOI%2B7%2BHong%2BKong%2BCocktail%2B1.jpg",
       "ingredients": "2 fresh paan leaves• 4 cardamom• 1 spoon gulkand• 45ml vodka• 15ml sambuca• 1 maraschino cherry",
       "direction": "Muddle the paan leaf, gulkand and cardamom in a cocktail shaker. Add vodka and sambuca to this concoction. Add ice and shake well. Fine strain this into a glass filled with ice and paan leaves. Garnish with cardamom and cherry.",
       "userId": 1,
@@ -359,7 +369,7 @@
     {
       "title": "SMOKEY ORANGE JAM",
       "cookTime": "12 min",
-      "image": "https://www.seriouseats.com/images/2016/03/20160312-gin-cocktails-recipes-roundup-16.jpg",
+      "image": "https://cdn.vox-cdn.com/thumbor/jvKqFqJegMOvLXUOhLuPAlwaCqs=/0x0:726x545/1200x800/filters:focal(0x0:726x545)/cdn.vox-cdn.com/uploads/chorus_image/image/45780206/smokynegroni3.0.0.jpg",
       "ingredients": "1 freshly grilled orange• A couple of freshly chopped strawberries• Black pepper• Tequila Whiskey (Tennessee has been used for this recipe)• Marmalade",
       "direction": "In a bar shaker, muddle the strawberries and grilled orange. Top with ice, add the tequila, whiskey and marmalade. Cover and shake till the shaker has a frosted look around it (approximately 30-40 seconds). Strain and serve in a martini glass. Garnish with a bit of the grilled orange and a pinch of black pepper.",
       "userId": 1,
@@ -368,7 +378,7 @@
     {
       "title": "Sugarcane Mojito",
       "cookTime": "12 min",
-      "image": "https://im.indiatimes.in/content/2016/Sep/desi-cocktail_sugarcane-mojito_the-acacia-hotel-_-spa-goa_fb_1473234328.jpg",
+      "image": "https://www.laylita.com/recipes/wp-content/uploads/2014/03/Tangerine-or-mandarin-mojitos.jpg",
       "ingredients": "5 Oz Suger Cane Juice • 2 oz Vodka • salt and black pepper",
       "direction": "This healthy concoction has great benefits and is the perfect way to cool off in the summer. It is made by mixing good old ganne ka juice with vodka. You could add some chaat masala and cumin powder for a greater depth of flavor as well. Top it off with strips of sugarcane soaked in vodka and mint leaves to lend your palate a refreshing taste. Don't forget to chew on the sugarcane sticks once you are done sipping this great cocktail.",
       "userId": 1,
@@ -376,13 +386,6 @@
     }
   ],
   "favorites": [
-    {
-      "userId": 1,
-      "recipeId": 5,
-      "review": "",
-      "rating": 0,
-      "id": 1
-    },
     {
       "userId": 1,
       "recipeId": 6,
@@ -396,6 +399,13 @@
       "review": "",
       "rating": 0,
       "id": 4
+    },
+    {
+      "userId": 10,
+      "recipeId": 10,
+      "review": "",
+      "rating": 0,
+      "id": 5
     }
   ]
 }
