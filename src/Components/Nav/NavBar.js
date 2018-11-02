@@ -18,7 +18,7 @@ updateSearch(event){
 logoutFunction = ()=>
     {
         sessionStorage.clear();
-        window.location.href="http://localhost:3000/";
+        window.location.href="https://priyanka-front-end-capstone.herokuapp.com/";
     }
 
     render() {
@@ -99,7 +99,7 @@ export default NavBar
 //   logoutFunction = ()=>
 //     {
 //         sessionStorage.clear();
-//         window.location.href="http://localhost:3000/";
+//         window.location.href="https://priyanka-front-end-capstone.herokuapp.com/";
 //     }
 
 //   render() {
