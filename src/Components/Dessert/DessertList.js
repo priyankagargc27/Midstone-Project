@@ -41,7 +41,7 @@ export default class DessertList extends Component {
         if (SearchItem !== "") {
             console.log("searchItem", SearchItem)
             console.log(`http://localhost:5002/desserts?q=${SearchItem}`)
-            fetch(`http://localhost:5002/desserts?q=${SearchItem}`)
+            fetch(`https://priyanka-frontend-server.herokuapp.com/desserts?q=${SearchItem}`)
                 .then(a => a.json())
                 .then((desserts) => {
                     console.log(desserts)

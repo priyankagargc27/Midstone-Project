@@ -42,7 +42,7 @@ export default class RecipeList extends Component {
         if (SearchItem !== "") {
             console.log("searchItem", SearchItem)
             console.log(`http://localhost:5002/recipes?q=${SearchItem}`)
-            fetch(`http://localhost:5002/recipes?q=${SearchItem}`)
+            fetch(`https://priyanka-frontend-server.herokuapp.com/recipes?q=${SearchItem}`)
                 .then(a => a.json())
                 .then((recipes) => {
                     console.log(recipes)
@@ -66,7 +66,7 @@ export default class RecipeList extends Component {
         } else {
             userId = currentUser.userId
         }
-            fetch("http://localhost:5002/favorites", {
+            fetch("https://priyanka-frontend-server.herokuapp.com/favorites", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
