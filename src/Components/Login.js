@@ -39,12 +39,13 @@ export default class Login extends Component {
                 localStorage.setItem("userInfo", loginObj);
                 window.location.href="https://priyanka-front-end-capstone.herokuapp.com/Profile"
                 
-            } else {
+            } 
+            else {
                 console.log("hello")
                 sessionStorage.setItem("userInfo", loginObj);
                 
                 
-                window.location.href="https://priyanka-front-end-capstone.herokuapp.com/Profile"
+                document.location.href="https://priyanka-front-end-capstone.herokuapp.com/Profile"
             }
         } 
         else {
