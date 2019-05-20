@@ -1,4 +1,4 @@
-Save The Recipes By Priyanka Garg
+Recipe Management By Priyanka Garg
 
 
 About App - 
